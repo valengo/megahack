@@ -14,6 +14,16 @@
 		647D66CB245C82CD00442029 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 647D66CA245C82CD00442029 /* Assets.xcassets */; };
 		647D66CE245C82CD00442029 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 647D66CC245C82CD00442029 /* LaunchScreen.storyboard */; };
 		647D66DB245C870100442029 /* EventHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 647D66DA245C870100442029 /* EventHome.storyboard */; };
+		647D66DE245C8CC500442029 /* IntegrationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D66DD245C8CC500442029 /* IntegrationManager.swift */; };
+		647D66E3245CB99E00442029 /* SocialMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D66E2245CB99E00442029 /* SocialMedia.swift */; };
+		647D66E5245CBB2A00442029 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D66E4245CBB2A00442029 /* Event.swift */; };
+		647D66E7245CD09E00442029 /* RoomType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D66E6245CD09E00442029 /* RoomType.swift */; };
+		647D66EA245CD36800442029 /* RealTimeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D66E9245CD36800442029 /* RealTimeType.swift */; };
+		647D66EC245CD64B00442029 /* SocialMediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D66EB245CD64B00442029 /* SocialMediaType.swift */; };
+		647D66EE245CD68300442029 /* Talk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D66ED245CD68300442029 /* Talk.swift */; };
+		647D66F0245CD76B00442029 /* RealTimeTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D66EF245CD76B00442029 /* RealTimeTool.swift */; };
+		647D66F2245CD87A00442029 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D66F1245CD87A00442029 /* Room.swift */; };
+		647D66F4245CD90600442029 /* UserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D66F3245CD90600442029 /* UserType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +36,16 @@
 		647D66CD245C82CD00442029 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		647D66CF245C82CD00442029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		647D66DA245C870100442029 /* EventHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EventHome.storyboard; sourceTree = "<group>"; };
+		647D66DD245C8CC500442029 /* IntegrationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationManager.swift; sourceTree = "<group>"; };
+		647D66E2245CB99E00442029 /* SocialMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMedia.swift; sourceTree = "<group>"; };
+		647D66E4245CBB2A00442029 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		647D66E6245CD09E00442029 /* RoomType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomType.swift; sourceTree = "<group>"; };
+		647D66E9245CD36800442029 /* RealTimeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeType.swift; sourceTree = "<group>"; };
+		647D66EB245CD64B00442029 /* SocialMediaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaType.swift; sourceTree = "<group>"; };
+		647D66ED245CD68300442029 /* Talk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Talk.swift; sourceTree = "<group>"; };
+		647D66EF245CD76B00442029 /* RealTimeTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeTool.swift; sourceTree = "<group>"; };
+		647D66F1245CD87A00442029 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		647D66F3245CD90600442029 /* UserType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +81,7 @@
 				647D66D7245C832100442029 /* Model */,
 				647D66D6245C831D00442029 /* View */,
 				647D66D5245C831500442029 /* Controllers */,
+				647D66DC245C8B7B00442029 /* Integrations */,
 				647D66C1245C82CC00442029 /* AppDelegate.swift */,
 				647D66C3245C82CC00442029 /* SceneDelegate.swift */,
 				647D66CF245C82CD00442029 /* Info.plist */,
@@ -88,6 +109,7 @@
 		647D66D7245C832100442029 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				647D66E1245CB97500442029 /* Domain */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -108,6 +130,38 @@
 				647D66CA245C82CD00442029 /* Assets.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		647D66DC245C8B7B00442029 /* Integrations */ = {
+			isa = PBXGroup;
+			children = (
+				647D66DD245C8CC500442029 /* IntegrationManager.swift */,
+			);
+			path = Integrations;
+			sourceTree = "<group>";
+		};
+		647D66E1245CB97500442029 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				647D66E8245CD0AD00442029 /* Enumerations */,
+				647D66E2245CB99E00442029 /* SocialMedia.swift */,
+				647D66EF245CD76B00442029 /* RealTimeTool.swift */,
+				647D66E4245CBB2A00442029 /* Event.swift */,
+				647D66ED245CD68300442029 /* Talk.swift */,
+				647D66F1245CD87A00442029 /* Room.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		647D66E8245CD0AD00442029 /* Enumerations */ = {
+			isa = PBXGroup;
+			children = (
+				647D66E6245CD09E00442029 /* RoomType.swift */,
+				647D66E9245CD36800442029 /* RealTimeType.swift */,
+				647D66EB245CD64B00442029 /* SocialMediaType.swift */,
+				647D66F3245CD90600442029 /* UserType.swift */,
+			);
+			path = Enumerations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,9 +236,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				647D66E7245CD09E00442029 /* RoomType.swift in Sources */,
+				647D66F0245CD76B00442029 /* RealTimeTool.swift in Sources */,
+				647D66F4245CD90600442029 /* UserType.swift in Sources */,
+				647D66F2245CD87A00442029 /* Room.swift in Sources */,
 				647D66C6245C82CC00442029 /* ViewController.swift in Sources */,
+				647D66E3245CB99E00442029 /* SocialMedia.swift in Sources */,
+				647D66EE245CD68300442029 /* Talk.swift in Sources */,
+				647D66DE245C8CC500442029 /* IntegrationManager.swift in Sources */,
+				647D66EA245CD36800442029 /* RealTimeType.swift in Sources */,
 				647D66C2245C82CC00442029 /* AppDelegate.swift in Sources */,
+				647D66E5245CBB2A00442029 /* Event.swift in Sources */,
 				647D66C4245C82CC00442029 /* SceneDelegate.swift in Sources */,
+				647D66EC245CD64B00442029 /* SocialMediaType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
