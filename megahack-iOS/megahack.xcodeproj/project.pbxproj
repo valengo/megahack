@@ -24,6 +24,9 @@
 		647D66F0245CD76B00442029 /* RealTimeTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D66EF245CD76B00442029 /* RealTimeTool.swift */; };
 		647D66F2245CD87A00442029 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D66F1245CD87A00442029 /* Room.swift */; };
 		647D66F4245CD90600442029 /* UserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D66F3245CD90600442029 /* UserType.swift */; };
+		647D66F9245CDCD100442029 /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D66F8245CDCD100442029 /* Field.swift */; };
+		647D66FD245CDD7A00442029 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D66FC245CDD7A00442029 /* Repository.swift */; };
+		647D66FF245CDE1600442029 /* FieldRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D66FE245CDE1600442029 /* FieldRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		647D66EF245CD76B00442029 /* RealTimeTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeTool.swift; sourceTree = "<group>"; };
 		647D66F1245CD87A00442029 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		647D66F3245CD90600442029 /* UserType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserType.swift; sourceTree = "<group>"; };
+		647D66F8245CDCD100442029 /* Field.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
+		647D66FC245CDD7A00442029 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		647D66FE245CDE1600442029 /* FieldRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,7 @@
 		647D66D7245C832100442029 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				647D66F6245CDB5900442029 /* Repository */,
 				647D66E1245CB97500442029 /* Domain */,
 			);
 			path = Model;
@@ -149,6 +156,7 @@
 				647D66E4245CBB2A00442029 /* Event.swift */,
 				647D66ED245CD68300442029 /* Talk.swift */,
 				647D66F1245CD87A00442029 /* Room.swift */,
+				647D66F8245CDCD100442029 /* Field.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -162,6 +170,23 @@
 				647D66F3245CD90600442029 /* UserType.swift */,
 			);
 			path = Enumerations;
+			sourceTree = "<group>";
+		};
+		647D66F6245CDB5900442029 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				647D66F7245CDCA200442029 /* Protocols */,
+				647D66FE245CDE1600442029 /* FieldRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		647D66F7245CDCA200442029 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				647D66FC245CDD7A00442029 /* Repository.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,14 +265,17 @@
 				647D66F0245CD76B00442029 /* RealTimeTool.swift in Sources */,
 				647D66F4245CD90600442029 /* UserType.swift in Sources */,
 				647D66F2245CD87A00442029 /* Room.swift in Sources */,
+				647D66FF245CDE1600442029 /* FieldRepository.swift in Sources */,
 				647D66C6245C82CC00442029 /* ViewController.swift in Sources */,
 				647D66E3245CB99E00442029 /* SocialMedia.swift in Sources */,
 				647D66EE245CD68300442029 /* Talk.swift in Sources */,
 				647D66DE245C8CC500442029 /* IntegrationManager.swift in Sources */,
 				647D66EA245CD36800442029 /* RealTimeType.swift in Sources */,
 				647D66C2245C82CC00442029 /* AppDelegate.swift in Sources */,
+				647D66FD245CDD7A00442029 /* Repository.swift in Sources */,
 				647D66E5245CBB2A00442029 /* Event.swift in Sources */,
 				647D66C4245C82CC00442029 /* SceneDelegate.swift in Sources */,
+				647D66F9245CDCD100442029 /* Field.swift in Sources */,
 				647D66EC245CD64B00442029 /* SocialMediaType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
