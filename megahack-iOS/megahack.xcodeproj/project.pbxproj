@@ -35,6 +35,8 @@
 		647D6716245D463D00442029 /* GeneralProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 647D6715245D463D00442029 /* GeneralProfile.storyboard */; };
 		647D6718245D479100442029 /* Notifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 647D6717245D479100442029 /* Notifications.storyboard */; };
 		647D6727245DFA7800442029 /* EventHomeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D6726245DFA7800442029 /* EventHomeTableView.swift */; };
+		647D672A245DFF9E00442029 /* RoundedBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D6729245DFF9E00442029 /* RoundedBorderView.swift */; };
+		647D672C245E0AC900442029 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D672B245E0AC900442029 /* RoundedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +70,8 @@
 		647D6715245D463D00442029 /* GeneralProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GeneralProfile.storyboard; sourceTree = "<group>"; };
 		647D6717245D479100442029 /* Notifications.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notifications.storyboard; sourceTree = "<group>"; };
 		647D6726245DFA7800442029 /* EventHomeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHomeTableView.swift; sourceTree = "<group>"; };
+		647D6729245DFF9E00442029 /* RoundedBorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBorderView.swift; sourceTree = "<group>"; };
+		647D672B245E0AC900442029 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,7 @@
 		647D66D6245C831D00442029 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				647D6728245DFF8000442029 /* Custom */,
 				647D670C245D1EAA00442029 /* Cells */,
 				647D66D9245C833A00442029 /* Assets */,
 				647D66D8245C832800442029 /* Storyboards */,
@@ -245,6 +250,15 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		647D6728245DFF8000442029 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				647D6729245DFF9E00442029 /* RoundedBorderView.swift */,
+				647D672B245E0AC900442029 /* RoundedButton.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -325,6 +339,7 @@
 				647D66F4245CD90600442029 /* UserType.swift in Sources */,
 				647D66F2245CD87A00442029 /* Room.swift in Sources */,
 				647D66FF245CDE1600442029 /* FieldRepository.swift in Sources */,
+				647D672C245E0AC900442029 /* RoundedButton.swift in Sources */,
 				647D66C6245C82CC00442029 /* ViewController.swift in Sources */,
 				647D670B245D124C00442029 /* EventOnBoardingViewController.swift in Sources */,
 				647D66E3245CB99E00442029 /* SocialMedia.swift in Sources */,
@@ -336,6 +351,7 @@
 				647D6703245D0AC400442029 /* FieldLocalSource.swift in Sources */,
 				647D6727245DFA7800442029 /* EventHomeTableView.swift in Sources */,
 				647D66FD245CDD7A00442029 /* Repository.swift in Sources */,
+				647D672A245DFF9E00442029 /* RoundedBorderView.swift in Sources */,
 				647D66E5245CBB2A00442029 /* Event.swift in Sources */,
 				647D66C4245C82CC00442029 /* SceneDelegate.swift in Sources */,
 				647D66F9245CDCD100442029 /* Field.swift in Sources */,

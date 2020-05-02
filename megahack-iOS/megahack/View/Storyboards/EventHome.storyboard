@@ -47,7 +47,7 @@ Mega Hack 2020!</string>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FieldCell" id="viz-XP-G6w" customClass="FieldCell" customModule="megahack" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="72.5" height="34.5"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="QSF-h5-1Gv">
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="QSF-h5-1Gv" customClass="RoundedBorderView" customModule="megahack" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="72.5" height="34.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
@@ -65,6 +65,11 @@ Mega Hack 2020!</string>
                                                         <constraint firstAttribute="trailing" secondItem="C6n-ZZ-tPs" secondAttribute="trailing" constant="10" id="Ls5-Yz-518"/>
                                                         <constraint firstItem="C6n-ZZ-tPs" firstAttribute="leading" secondItem="QSF-h5-1Gv" secondAttribute="leading" constant="10" id="gBp-Ow-Ssj"/>
                                                     </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </collectionViewCellContentView>
                                                 <connections>
                                                     <outlet property="label" destination="C6n-ZZ-tPs" id="gSY-sf-qVI"/>
@@ -72,7 +77,7 @@ Mega Hack 2020!</string>
                                             </collectionViewCell>
                                         </cells>
                                     </collectionView>
-                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="kGb-eW-jdf">
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="kGb-eW-jdf" customClass="RoundedButton" customModule="megahack" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="633" width="358" height="50"/>
                                         <color key="backgroundColor" name="DisabledButton"/>
                                         <constraints>
@@ -145,16 +150,16 @@ Mega Hack 2020!</string>
         <scene sceneID="NpP-ZY-g6b">
             <objects>
                 <tableViewController id="ywQ-HK-az2" customClass="EventHomeTableView" customModule="megahack" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="yBU-gf-fnd">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="yBU-gf-fnd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="MainBackground"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventBannerCell" id="mpZ-eM-qhO">
-                                <rect key="frame" x="0.0" y="28" width="414" height="340"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="350"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mpZ-eM-qhO" id="q99-QJ-yEY">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="340"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MegaHack" translatesAutoresizingMaskIntoConstraints="NO" id="hWT-xc-3lN" userLabel="Image">
@@ -163,7 +168,7 @@ Mega Hack 2020!</string>
                                                 <constraint firstAttribute="height" constant="320" id="ASU-Th-oWQ"/>
                                             </constraints>
                                         </imageView>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vPH-Wk-kbZ" userLabel="NameView">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vPH-Wk-kbZ" userLabel="NameView" customClass="RoundedBorderView" customModule="megahack" customModuleProvider="target">
                                             <rect key="frame" x="121" y="296" width="172" height="48"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mega Hack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1y-P1-aCH">
@@ -182,13 +187,18 @@ Mega Hack 2020!</string>
                                                 <constraint firstAttribute="bottom" secondItem="p1y-P1-aCH" secondAttribute="bottom" id="uMy-79-Ya7"/>
                                                 <constraint firstItem="p1y-P1-aCH" firstAttribute="leading" secondItem="vPH-Wk-kbZ" secondAttribute="leading" id="zMb-p5-tU6"/>
                                             </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                         </view>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="vPH-Wk-kbZ" firstAttribute="centerY" secondItem="hWT-xc-3lN" secondAttribute="bottom" id="3mu-x3-Uck"/>
                                         <constraint firstItem="hWT-xc-3lN" firstAttribute="leading" secondItem="q99-QJ-yEY" secondAttribute="leading" id="7AF-ns-ent"/>
                                         <constraint firstAttribute="trailing" secondItem="hWT-xc-3lN" secondAttribute="trailing" id="GML-sF-1yR"/>
-                                        <constraint firstAttribute="bottom" secondItem="hWT-xc-3lN" secondAttribute="bottom" constant="20" id="Qwk-QK-RLB"/>
+                                        <constraint firstAttribute="bottom" secondItem="hWT-xc-3lN" secondAttribute="bottom" constant="30" id="Qwk-QK-RLB"/>
                                         <constraint firstItem="vPH-Wk-kbZ" firstAttribute="centerX" secondItem="q99-QJ-yEY" secondAttribute="centerX" id="SZP-8D-j6w"/>
                                         <constraint firstItem="hWT-xc-3lN" firstAttribute="top" secondItem="q99-QJ-yEY" secondAttribute="top" id="jiN-LM-ysZ"/>
                                     </constraints>
@@ -196,7 +206,7 @@ Mega Hack 2020!</string>
                                 <color key="backgroundColor" name="MainBackground"/>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventDataCell" id="KHG-5K-bNJ">
-                                <rect key="frame" x="0.0" y="368" width="414" height="97"/>
+                                <rect key="frame" x="0.0" y="378" width="414" height="97"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KHG-5K-bNJ" id="Tuz-Zu-Kae">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="97"/>
@@ -230,14 +240,14 @@ Mega Hack 2020!</string>
                                                             <rect key="frame" x="69.5" y="0.0" width="284.5" height="77"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Scn-UH-z4d">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="105" height="50.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="116" height="50.5"/>
                                                                     <subviews>
-                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alarm" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="TD5-mm-KRd">
-                                                                            <rect key="frame" x="0.0" y="-0.5" width="19" height="50"/>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="TD5-mm-KRd">
+                                                                            <rect key="frame" x="0.0" y="1" width="21" height="48"/>
                                                                             <color key="tintColor" name="EventText"/>
                                                                         </imageView>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14:00-16:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3k-RQ-g7N">
-                                                                            <rect key="frame" x="29" y="0.0" width="76" height="50.5"/>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25/04 - 05/05" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3k-RQ-g7N">
+                                                                            <rect key="frame" x="31" y="0.0" width="85" height="50.5"/>
                                                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                                             <color key="textColor" name="EventText"/>
                                                                             <nil key="highlightedColor"/>
@@ -282,6 +292,306 @@ Mega Hack 2020!</string>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" name="MainBackground"/>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeaturingNowCard" id="0fy-KR-dQI">
+                                <rect key="frame" x="0.0" y="475" width="414" height="85"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0fy-KR-dQI" id="32A-fD-Oo4">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="85"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7mz-Ry-qTb" customClass="RoundedBorderView" customModule="megahack" customModuleProvider="target">
+                                            <rect key="frame" x="30" y="30" width="354" height="45"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acontecendo agora!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZX-oA-39Q">
+                                                    <rect key="frame" x="20" y="0.0" width="145.5" height="45"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                                    <color key="textColor" name="MainBackground"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hzB-qM-K1H">
+                                                    <rect key="frame" x="314" y="14.5" width="20" height="16"/>
+                                                    <color key="tintColor" name="MainBackground"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="hzB-qM-K1H" secondAttribute="height" multiplier="1:1" id="G1m-7I-fwY"/>
+                                                        <constraint firstAttribute="width" constant="20" id="JBv-zc-7FH"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" name="FeaturingNow"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="hZX-oA-39Q" secondAttribute="bottom" id="3Fy-04-9TA"/>
+                                                <constraint firstItem="hZX-oA-39Q" firstAttribute="top" secondItem="7mz-Ry-qTb" secondAttribute="top" id="IFv-2o-6x3"/>
+                                                <constraint firstAttribute="height" constant="45" id="LGI-Ui-oaq"/>
+                                                <constraint firstAttribute="trailing" secondItem="hzB-qM-K1H" secondAttribute="trailing" constant="20" id="O37-2U-TKf"/>
+                                                <constraint firstItem="hzB-qM-K1H" firstAttribute="centerY" secondItem="7mz-Ry-qTb" secondAttribute="centerY" id="d5K-55-2Yk"/>
+                                                <constraint firstItem="hZX-oA-39Q" firstAttribute="leading" secondItem="7mz-Ry-qTb" secondAttribute="leading" constant="20" id="ohD-a6-023"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" name="MainBackground"/>
+                                    <constraints>
+                                        <constraint firstItem="7mz-Ry-qTb" firstAttribute="top" secondItem="32A-fD-Oo4" secondAttribute="top" constant="30" id="4PZ-Fj-p1i"/>
+                                        <constraint firstAttribute="bottom" secondItem="7mz-Ry-qTb" secondAttribute="bottom" constant="10" id="62K-m7-HSA"/>
+                                        <constraint firstItem="7mz-Ry-qTb" firstAttribute="leading" secondItem="32A-fD-Oo4" secondAttribute="leading" constant="30" id="eRN-dl-3zF"/>
+                                        <constraint firstAttribute="trailing" secondItem="7mz-Ry-qTb" secondAttribute="trailing" constant="30" id="yty-Uu-lR7"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NetworkFeatureCard" id="f4u-Eq-Mbk">
+                                <rect key="frame" x="0.0" y="560" width="414" height="157"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f4u-Eq-Mbk" id="4lg-FQ-ttA">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="157"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gI7-YF-1EI">
+                                            <rect key="frame" x="0.0" y="30" width="384" height="127"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g6F-Ch-N9V" customClass="RoundedBorderView" customModule="megahack" customModuleProvider="target">
+                                                    <rect key="frame" x="30" y="0.0" width="354" height="127"/>
+                                                    <color key="backgroundColor" name="MainBackground"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" name="CardBorder"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="251" image="Guy" translatesAutoresizingMaskIntoConstraints="NO" id="NO6-Xe-Cw8">
+                                                    <rect key="frame" x="0.0" y="0.0" width="141" height="127"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="141" id="0Mw-qF-dU4"/>
+                                                        <constraint firstAttribute="height" constant="127" id="lKJ-AN-4ro"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" axis="vertical" distribution="fillEqually" spacing="-80" translatesAutoresizingMaskIntoConstraints="NO" id="ppu-KE-P5t">
+                                                    <rect key="frame" x="151" y="0.0" width="233" height="127"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descubra pessoas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Oq-YC-H7C">
+                                                            <rect key="frame" x="0.0" y="0.0" width="233" height="103.5"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                                            <color key="textColor" name="EventText"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aumente  seu network!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4Z-3L-F1S">
+                                                            <rect key="frame" x="0.0" y="23.5" width="233" height="103.5"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                            <color key="textColor" name="EventText"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" name="MainBackground"/>
+                                            <constraints>
+                                                <constraint firstItem="NO6-Xe-Cw8" firstAttribute="leading" secondItem="gI7-YF-1EI" secondAttribute="leading" id="Dyn-MX-zHQ"/>
+                                                <constraint firstItem="g6F-Ch-N9V" firstAttribute="top" secondItem="gI7-YF-1EI" secondAttribute="top" id="FYm-go-3RF"/>
+                                                <constraint firstAttribute="bottom" secondItem="ppu-KE-P5t" secondAttribute="bottom" id="HXl-lE-7ng"/>
+                                                <constraint firstAttribute="bottom" secondItem="g6F-Ch-N9V" secondAttribute="bottom" id="JhF-cl-qb1"/>
+                                                <constraint firstAttribute="trailing" secondItem="ppu-KE-P5t" secondAttribute="trailing" id="KFr-UK-7pk"/>
+                                                <constraint firstItem="ppu-KE-P5t" firstAttribute="leading" secondItem="NO6-Xe-Cw8" secondAttribute="trailing" constant="10" id="XjB-tA-PBL"/>
+                                                <constraint firstAttribute="bottom" secondItem="NO6-Xe-Cw8" secondAttribute="bottom" id="Ybh-xi-1F8"/>
+                                                <constraint firstAttribute="trailing" secondItem="g6F-Ch-N9V" secondAttribute="trailing" id="bx6-f1-FXP"/>
+                                                <constraint firstItem="g6F-Ch-N9V" firstAttribute="leading" secondItem="gI7-YF-1EI" secondAttribute="leading" constant="30" id="kS0-lq-9Z4"/>
+                                                <constraint firstItem="NO6-Xe-Cw8" firstAttribute="top" secondItem="gI7-YF-1EI" secondAttribute="top" id="ooL-vW-WU6"/>
+                                                <constraint firstItem="ppu-KE-P5t" firstAttribute="top" secondItem="gI7-YF-1EI" secondAttribute="top" id="qec-u9-qiC"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" name="MainBackground"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="gI7-YF-1EI" secondAttribute="trailing" constant="30" id="JVC-KI-ogT"/>
+                                        <constraint firstAttribute="bottom" secondItem="gI7-YF-1EI" secondAttribute="bottom" id="chd-NB-NeN"/>
+                                        <constraint firstItem="gI7-YF-1EI" firstAttribute="leading" secondItem="4lg-FQ-ttA" secondAttribute="leading" id="hQ4-wM-Rzg"/>
+                                        <constraint firstItem="gI7-YF-1EI" firstAttribute="top" secondItem="4lg-FQ-ttA" secondAttribute="top" constant="30" id="zzr-eb-hnB"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="MainBackground"/>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SponsorsFeatureCard" id="cfa-Vu-NCG">
+                                <rect key="frame" x="0.0" y="717" width="414" height="157"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cfa-Vu-NCG" id="kyD-Vq-X3D">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="157"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="irH-ls-IP3">
+                                            <rect key="frame" x="0.0" y="30" width="384" height="127"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="h1G-JR-SPY" userLabel="Size">
+                                                    <rect key="frame" x="72" y="0.0" width="121" height="127"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="127" id="6qz-Kf-jHf"/>
+                                                        <constraint firstAttribute="width" constant="121" id="QfW-qO-ePq"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o7Z-dh-4Mg" customClass="RoundedBorderView" customModule="megahack" customModuleProvider="target">
+                                                    <rect key="frame" x="30" y="0.0" width="354" height="127"/>
+                                                    <color key="backgroundColor" name="MainBackground"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" name="CardBorder"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="251" image="Sponsors" translatesAutoresizingMaskIntoConstraints="NO" id="HdB-Rb-Hwu">
+                                                    <rect key="frame" x="20" y="23.5" width="121" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="80" id="TzE-kh-iFD"/>
+                                                        <constraint firstAttribute="width" constant="121" id="rgz-gb-Nsa"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" axis="vertical" distribution="fillEqually" spacing="-80" translatesAutoresizingMaskIntoConstraints="NO" id="l5m-pO-KE4">
+                                                    <rect key="frame" x="151" y="0.0" width="233" height="127"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nossos patrocinadores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xek-Rj-180">
+                                                            <rect key="frame" x="0.0" y="0.0" width="233" height="103.5"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                                            <color key="textColor" name="EventText"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Participe de sorteios!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PgA-k6-CFt">
+                                                            <rect key="frame" x="0.0" y="23.5" width="233" height="103.5"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                            <color key="textColor" name="EventText"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" name="MainBackground"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="o7Z-dh-4Mg" secondAttribute="trailing" id="Auc-52-RG0"/>
+                                                <constraint firstItem="HdB-Rb-Hwu" firstAttribute="centerY" secondItem="irH-ls-IP3" secondAttribute="centerY" id="NsZ-Xs-d2O"/>
+                                                <constraint firstItem="l5m-pO-KE4" firstAttribute="leading" secondItem="HdB-Rb-Hwu" secondAttribute="trailing" constant="10" id="OxF-Md-sal"/>
+                                                <constraint firstItem="h1G-JR-SPY" firstAttribute="leading" secondItem="irH-ls-IP3" secondAttribute="leading" constant="72" id="V0U-OA-Kli"/>
+                                                <constraint firstItem="l5m-pO-KE4" firstAttribute="top" secondItem="irH-ls-IP3" secondAttribute="top" id="aHi-zO-qee"/>
+                                                <constraint firstItem="HdB-Rb-Hwu" firstAttribute="leading" secondItem="irH-ls-IP3" secondAttribute="leading" constant="20" id="dNN-3o-MaG"/>
+                                                <constraint firstAttribute="bottom" secondItem="h1G-JR-SPY" secondAttribute="bottom" id="gfM-Zl-GJ5"/>
+                                                <constraint firstItem="o7Z-dh-4Mg" firstAttribute="top" secondItem="irH-ls-IP3" secondAttribute="top" id="hhu-9r-587"/>
+                                                <constraint firstItem="h1G-JR-SPY" firstAttribute="top" secondItem="irH-ls-IP3" secondAttribute="top" id="inE-Yf-gAN"/>
+                                                <constraint firstAttribute="bottom" secondItem="l5m-pO-KE4" secondAttribute="bottom" id="jOk-fJ-aId"/>
+                                                <constraint firstItem="o7Z-dh-4Mg" firstAttribute="leading" secondItem="irH-ls-IP3" secondAttribute="leading" constant="30" id="knV-cT-lg8"/>
+                                                <constraint firstAttribute="trailing" secondItem="l5m-pO-KE4" secondAttribute="trailing" id="ltA-Hw-ICw"/>
+                                                <constraint firstAttribute="bottom" secondItem="o7Z-dh-4Mg" secondAttribute="bottom" id="zx8-Nw-ksf"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" name="MainBackground"/>
+                                    <constraints>
+                                        <constraint firstItem="irH-ls-IP3" firstAttribute="leading" secondItem="kyD-Vq-X3D" secondAttribute="leading" id="J3R-YB-ml7"/>
+                                        <constraint firstAttribute="trailing" secondItem="irH-ls-IP3" secondAttribute="trailing" constant="30" id="KXu-KA-yjM"/>
+                                        <constraint firstAttribute="bottom" secondItem="irH-ls-IP3" secondAttribute="bottom" id="Vm8-eG-g8h"/>
+                                        <constraint firstItem="irH-ls-IP3" firstAttribute="top" secondItem="kyD-Vq-X3D" secondAttribute="top" constant="30" id="Y8h-uH-zdJ"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="MainBackground"/>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScheduleFeatureCard" id="ob6-tr-sNB">
+                                <rect key="frame" x="0.0" y="874" width="414" height="177"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ob6-tr-sNB" id="kxD-dE-dwM">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="177"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Kl-zd-Q7W">
+                                            <rect key="frame" x="0.0" y="30" width="384" height="127"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jMf-f0-oc8" userLabel="Size">
+                                                    <rect key="frame" x="72" y="0.0" width="121" height="127"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="127" id="ACU-iU-adu"/>
+                                                        <constraint firstAttribute="width" constant="121" id="mBH-7t-Rtj"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jZZ-kD-J11" customClass="RoundedBorderView" customModule="megahack" customModuleProvider="target">
+                                                    <rect key="frame" x="30" y="0.0" width="354" height="127"/>
+                                                    <color key="backgroundColor" name="MainBackground"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" name="CardBorder"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="251" image="Calendar" translatesAutoresizingMaskIntoConstraints="NO" id="5DE-4w-geb">
+                                                    <rect key="frame" x="0.0" y="23.5" width="141" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="141" id="Y5n-ED-wNa"/>
+                                                        <constraint firstAttribute="height" constant="80" id="xxp-iw-8SP"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" axis="vertical" distribution="fillEqually" spacing="-80" translatesAutoresizingMaskIntoConstraints="NO" id="C4a-ht-qka">
+                                                    <rect key="frame" x="151" y="0.0" width="233" height="127"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kzM-Qu-dLV">
+                                                            <rect key="frame" x="0.0" y="0.0" width="233" height="127"/>
+                                                            <string key="text">Confira toda a
+programação!</string>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                                            <color key="textColor" name="EventText"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="np3-9S-oAN">
+                                                            <rect key="frame" x="0.0" y="0.0" width="233" height="0.0"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                            <color key="textColor" name="EventText"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" name="MainBackground"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="jZZ-kD-J11" secondAttribute="bottom" id="2LM-VL-Iqb"/>
+                                                <constraint firstItem="5DE-4w-geb" firstAttribute="leading" secondItem="5Kl-zd-Q7W" secondAttribute="leading" id="2tc-kS-BNL"/>
+                                                <constraint firstAttribute="trailing" secondItem="jZZ-kD-J11" secondAttribute="trailing" id="30G-yd-BG3"/>
+                                                <constraint firstItem="5DE-4w-geb" firstAttribute="centerY" secondItem="5Kl-zd-Q7W" secondAttribute="centerY" id="7BH-3b-N6y"/>
+                                                <constraint firstItem="C4a-ht-qka" firstAttribute="leading" secondItem="5DE-4w-geb" secondAttribute="trailing" constant="10" id="KBi-yq-NhJ"/>
+                                                <constraint firstItem="C4a-ht-qka" firstAttribute="top" secondItem="5Kl-zd-Q7W" secondAttribute="top" id="Myl-Jd-xjx"/>
+                                                <constraint firstItem="jMf-f0-oc8" firstAttribute="top" secondItem="5Kl-zd-Q7W" secondAttribute="top" id="R3A-Gz-dvM"/>
+                                                <constraint firstAttribute="trailing" secondItem="C4a-ht-qka" secondAttribute="trailing" id="WZw-0Z-fVw"/>
+                                                <constraint firstAttribute="bottom" secondItem="C4a-ht-qka" secondAttribute="bottom" id="aRU-jZ-O3c"/>
+                                                <constraint firstItem="jMf-f0-oc8" firstAttribute="leading" secondItem="5Kl-zd-Q7W" secondAttribute="leading" constant="72" id="htf-Eb-lu0"/>
+                                                <constraint firstAttribute="bottom" secondItem="jMf-f0-oc8" secondAttribute="bottom" id="jDm-RJ-ekG"/>
+                                                <constraint firstItem="jZZ-kD-J11" firstAttribute="top" secondItem="5Kl-zd-Q7W" secondAttribute="top" id="lE7-X7-7Ts"/>
+                                                <constraint firstItem="jZZ-kD-J11" firstAttribute="leading" secondItem="5Kl-zd-Q7W" secondAttribute="leading" constant="30" id="mlz-Db-T2e"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" name="MainBackground"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="5Kl-zd-Q7W" secondAttribute="bottom" constant="20" id="5Ko-Db-cvH"/>
+                                        <constraint firstItem="5Kl-zd-Q7W" firstAttribute="top" secondItem="kxD-dE-dwM" secondAttribute="top" constant="30" id="9OC-gm-qsR"/>
+                                        <constraint firstAttribute="trailing" secondItem="5Kl-zd-Q7W" secondAttribute="trailing" constant="30" id="LgC-OE-YMk"/>
+                                        <constraint firstItem="5Kl-zd-Q7W" firstAttribute="leading" secondItem="kxD-dE-dwM" secondAttribute="leading" id="xsI-wg-3rw"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="MainBackground"/>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="ywQ-HK-az2" id="UDp-Ia-KmG"/>
@@ -295,15 +605,25 @@ Mega Hack 2020!</string>
         </scene>
     </scenes>
     <resources>
+        <image name="Calendar" width="222" height="171"/>
+        <image name="Guy" width="141" height="127"/>
         <image name="MegaHack" width="375" height="319"/>
-        <image name="alarm" catalog="system" width="124" height="128"/>
+        <image name="Sponsors" width="79" height="74"/>
+        <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="house" catalog="system" width="128" height="110"/>
         <image name="pin" catalog="system" width="119" height="128"/>
+        <image name="video" catalog="system" width="128" height="83"/>
+        <namedColor name="CardBorder">
+            <color red="0.62352941176470589" green="0.62352941176470589" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="DisabledButton">
             <color red="0.7803921568627451" green="0.7803921568627451" blue="0.83137254901960778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="EventText">
             <color red="0.29803921568627451" green="0.29411764705882354" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FeaturingNow">
+            <color red="0.56502389909999995" green="0.86563307050000005" blue="0.61172813179999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="FieldBackground">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
