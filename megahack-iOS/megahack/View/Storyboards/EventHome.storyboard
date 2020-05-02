@@ -82,6 +82,9 @@ Mega Hack 2020!</string>
                                         <state key="normal" title="Continuar">
                                             <color key="titleColor" name="MainBackground"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="yRI-eA-MNl" kind="presentation" modalPresentationStyle="fullScreen" id="2Zy-O1-Kmy"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -116,10 +119,72 @@ Mega Hack 2020!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jpV-ha-plR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-152.17391304347828" y="34.151785714285715"/>
+            <point key="canvasLocation" x="-165" y="33"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NJI-YU-XRV">
+            <objects>
+                <viewController id="yRI-eA-MNl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xqf-rI-hYj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VGY-0m-Qvb">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MegaHack" translatesAutoresizingMaskIntoConstraints="NO" id="YCE-S2-oWl">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="319"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xcn-so-OHA">
+                                        <rect key="frame" x="121" y="295" width="172" height="48"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mega Hack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sxm-sN-Rck">
+                                                <rect key="frame" x="8" y="8" width="156" height="32"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" name="MainBackground"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="LightRed"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="Sxm-sN-Rck" secondAttribute="bottom" constant="8" id="HpC-ua-Jpk"/>
+                                            <constraint firstAttribute="height" constant="48" id="Ru9-yf-zlx"/>
+                                            <constraint firstAttribute="width" constant="172" id="bVP-D2-mkb"/>
+                                            <constraint firstItem="Sxm-sN-Rck" firstAttribute="leading" secondItem="Xcn-so-OHA" secondAttribute="leading" constant="8" id="sIW-Sd-FkZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="Sxm-sN-Rck" secondAttribute="trailing" constant="8" id="ub0-bX-8WL"/>
+                                            <constraint firstItem="Sxm-sN-Rck" firstAttribute="top" secondItem="Xcn-so-OHA" secondAttribute="top" constant="8" id="yiE-gu-Dhd"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="MainBackground"/>
+                                <constraints>
+                                    <constraint firstItem="YCE-S2-oWl" firstAttribute="top" secondItem="VGY-0m-Qvb" secondAttribute="top" id="BI5-SL-kL6"/>
+                                    <constraint firstItem="Xcn-so-OHA" firstAttribute="centerX" secondItem="VGY-0m-Qvb" secondAttribute="centerX" id="Cjd-XV-0ak"/>
+                                    <constraint firstAttribute="trailing" secondItem="YCE-S2-oWl" secondAttribute="trailing" id="DYu-cw-Ybl"/>
+                                    <constraint firstItem="Xcn-so-OHA" firstAttribute="centerY" secondItem="YCE-S2-oWl" secondAttribute="bottom" id="T5w-ru-pe0"/>
+                                    <constraint firstItem="YCE-S2-oWl" firstAttribute="centerX" secondItem="VGY-0m-Qvb" secondAttribute="centerX" id="c2V-4Z-pjZ"/>
+                                    <constraint firstItem="YCE-S2-oWl" firstAttribute="leading" secondItem="VGY-0m-Qvb" secondAttribute="leading" id="vqW-5b-sJQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="VGY-0m-Qvb" firstAttribute="leading" secondItem="F25-Qd-Inx" secondAttribute="leading" id="58Y-Gj-YAw"/>
+                            <constraint firstItem="VGY-0m-Qvb" firstAttribute="top" secondItem="xqf-rI-hYj" secondAttribute="top" id="6z2-9u-Gio"/>
+                            <constraint firstItem="F25-Qd-Inx" firstAttribute="trailing" secondItem="VGY-0m-Qvb" secondAttribute="trailing" id="HUb-wV-dVP"/>
+                            <constraint firstAttribute="bottom" secondItem="VGY-0m-Qvb" secondAttribute="bottom" id="vB8-KE-N3d"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="F25-Qd-Inx"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2Wx-OH-ZTP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KL7-fY-fEK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="579.71014492753625" y="33.482142857142854"/>
         </scene>
     </scenes>
     <resources>
+        <image name="MegaHack" width="375" height="319"/>
         <namedColor name="DisabledButton">
             <color red="0.7803921568627451" green="0.7803921568627451" blue="0.83137254901960778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -128,6 +193,9 @@ Mega Hack 2020!</string>
         </namedColor>
         <namedColor name="FieldLabelText">
             <color red="0.4392156862745098" green="0.43529411764705883" blue="0.49411764705882355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightRed">
+            <color red="0.92549019607843142" green="0.41960784313725491" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="MainBackground">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -60,6 +60,7 @@ extension EventOnBoardingViewController: UICollectionViewDelegate {
         
         collectionView.reloadItems(at: [indexPath])
         
+        continueButton.isEnabled = true
         var buttonColor = UIColor(named: "DisabledButton")
         if (viewModel.isAnyFieldSelected()) {
             buttonColor =  UIColor(named: "LightRed")
