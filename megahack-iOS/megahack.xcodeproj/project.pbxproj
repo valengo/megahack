@@ -38,6 +38,8 @@
 		647D6718245D479100442029 /* Notifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 647D6717245D479100442029 /* Notifications.storyboard */; };
 		647D671F245DBA4F00442029 /* EventDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D671D245DBA4F00442029 /* EventDataCell.swift */; };
 		647D6720245DBA4F00442029 /* EventDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 647D671E245DBA4F00442029 /* EventDataCell.xib */; };
+		647D6725245DC99300442029 /* EventHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D6724245DC99300442029 /* EventHomeController.swift */; };
+		647D6727245DFA7800442029 /* EventHomeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D6726245DFA7800442029 /* EventHomeTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +76,8 @@
 		647D6717245D479100442029 /* Notifications.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notifications.storyboard; sourceTree = "<group>"; };
 		647D671D245DBA4F00442029 /* EventDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDataCell.swift; sourceTree = "<group>"; };
 		647D671E245DBA4F00442029 /* EventDataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventDataCell.xib; sourceTree = "<group>"; };
+		647D6724245DC99300442029 /* EventHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHomeController.swift; sourceTree = "<group>"; };
+		647D6726245DFA7800442029 /* EventHomeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHomeTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,8 @@
 			children = (
 				647D66C5245C82CC00442029 /* ViewController.swift */,
 				647D670A245D124C00442029 /* EventOnBoardingViewController.swift */,
+				647D6724245DC99300442029 /* EventHomeController.swift */,
+				647D6726245DFA7800442029 /* EventHomeTableView.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -332,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				647D66E7245CD09E00442029 /* RoomType.swift in Sources */,
+				647D6725245DC99300442029 /* EventHomeController.swift in Sources */,
 				647D66F0245CD76B00442029 /* RealTimeTool.swift in Sources */,
 				647D671F245DBA4F00442029 /* EventDataCell.swift in Sources */,
 				647D6713245D433800442029 /* EventBannerCell.swift in Sources */,
@@ -347,6 +354,7 @@
 				647D66EA245CD36800442029 /* RealTimeType.swift in Sources */,
 				647D66C2245C82CC00442029 /* AppDelegate.swift in Sources */,
 				647D6703245D0AC400442029 /* FieldLocalSource.swift in Sources */,
+				647D6727245DFA7800442029 /* EventHomeTableView.swift in Sources */,
 				647D66FD245CDD7A00442029 /* Repository.swift in Sources */,
 				647D66E5245CBB2A00442029 /* Event.swift in Sources */,
 				647D66C4245C82CC00442029 /* SceneDelegate.swift in Sources */,

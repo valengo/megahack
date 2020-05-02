@@ -9,12 +9,14 @@
 import UIKit
 
 class EventBannerCell: UICollectionViewCell {
+    
+    static let identifier = "\(String(describing: EventBannerCell.self))"
 
     @IBOutlet weak var eventName: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        
     }
-
 }

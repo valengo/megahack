@@ -49,7 +49,7 @@ extension EventOnBoardingViewController: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FieldCell.identifier, for: indexPath) as! FieldCell
         
         cell.bind(item: viewModel.fields[indexPath.row])
-        
+                
         return cell
     }
 }
@@ -66,7 +66,6 @@ extension EventOnBoardingViewController: UICollectionViewDelegate {
             buttonColor =  UIColor(named: "LightRed")
         }
         
-        // TODO improve animation
         continueButton.backgroundColor = buttonColor
     }
 }

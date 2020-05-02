@@ -9,6 +9,8 @@
 import UIKit
 
 class EventDataCell: UICollectionViewCell {
+    
+    static let identifier = "\(String(describing: EventDataCell.self))"
 
     override func awakeFromNib() {
         super.awakeFromNib()
