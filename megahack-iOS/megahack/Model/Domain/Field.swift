@@ -11,4 +11,11 @@ import Foundation
 struct Field {
     let id: Int
     let description: String
+    var isSelected: Bool
+}
+
+extension Field {
+    mutating func toggleSelection() {
+        isSelected = !isSelected
+    }
 }

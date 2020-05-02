@@ -8,23 +8,21 @@
 
 class FieldRepository: Repository {
     
+    let localSource: FieldLocalSource
+    
+    init(localSource: FieldLocalSource = FieldLocalSource()) {
+        self.localSource = localSource
+    }
+    
     func getAll() -> [Field] {
-        return []
+        return localSource.getAll()
     }
     
     func get(identifier: Int) -> Field? {
         return nil;
     }
     
-    func create(a: Field) -> Bool {
-        return false;
-    }
-    
-    func update(a: Field) -> Bool {
-        return false;
-    }
-    
-    func delete(a: Field) -> Bool {
+    func add(item: Field) -> Bool {
         return false;
     }
 }

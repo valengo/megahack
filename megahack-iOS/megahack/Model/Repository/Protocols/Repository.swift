@@ -12,7 +12,7 @@ protocol Repository {
     
     func getAll() -> [T]
     func get( identifier:Int ) -> T?
-    func create( a:T ) -> Bool
-    func update( a:T ) -> Bool
-    func delete( a:T ) -> Bool
+    func add( item:T ) -> Bool
+//    func update( item:T ) -> Bool
+//    func delete( item:T ) -> Bool
 }

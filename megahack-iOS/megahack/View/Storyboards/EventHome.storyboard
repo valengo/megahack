@@ -1,26 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aGL-hm-svZ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Event On Boarding View Controller-->
         <scene sceneID="uxA-ju-nhY">
             <objects>
-                <viewController storyboardIdentifier="EventHomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aGL-hm-svZ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EventHomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aGL-hm-svZ" customClass="EventOnBoardingViewController" customModule="megahack" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Spc-Jo-r0j">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n0c-D2-Y4f">
+                                <rect key="frame" x="28" y="90" width="358" height="772"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OBL-hT-8BQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="201" height="60"/>
+                                        <string key="text">Bem vindo(a) ao
+Mega Hack 2020!</string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="25"/>
+                                        <color key="textColor" name="Text"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escolha suas áreas de interesse:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cm-cJ-fud">
+                                        <rect key="frame" x="0.0" y="81" width="219" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                        <color key="textColor" name="Text"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Fh3-ER-DX9">
+                                        <rect key="frame" x="0.0" y="138.5" width="358" height="503.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="S2V-b5-V7F">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FieldCell" id="viz-XP-G6w" customClass="FieldCell" customModule="megahack" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="34.5"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="QSF-h5-1Gv">
+                                                    <rect key="frame" x="0.0" y="0.0" width="72.5" height="34.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Negócios" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C6n-ZZ-tPs">
+                                                            <rect key="frame" x="10" y="10" width="52.5" height="14.5"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
+                                                            <color key="textColor" name="FieldLabelText"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" name="FieldBackground"/>
+                                                    <constraints>
+                                                        <constraint firstItem="C6n-ZZ-tPs" firstAttribute="top" secondItem="QSF-h5-1Gv" secondAttribute="top" constant="10" id="Alo-Q8-K4g"/>
+                                                        <constraint firstAttribute="bottom" secondItem="C6n-ZZ-tPs" secondAttribute="bottom" constant="10" id="CkF-eP-EBj"/>
+                                                        <constraint firstAttribute="trailing" secondItem="C6n-ZZ-tPs" secondAttribute="trailing" constant="10" id="Ls5-Yz-518"/>
+                                                        <constraint firstItem="C6n-ZZ-tPs" firstAttribute="leading" secondItem="QSF-h5-1Gv" secondAttribute="leading" constant="10" id="gBp-Ow-Ssj"/>
+                                                    </constraints>
+                                                </collectionViewCellContentView>
+                                                <connections>
+                                                    <outlet property="label" destination="C6n-ZZ-tPs" id="gSY-sf-qVI"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="kGb-eW-jdf">
+                                        <rect key="frame" x="0.0" y="682" width="358" height="50"/>
+                                        <color key="backgroundColor" name="DisabledButton"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="T5a-S4-9me"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                                        <state key="normal" title="Continuar">
+                                            <color key="titleColor" name="MainBackground"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Fh3-ER-DX9" firstAttribute="top" secondItem="8cm-cJ-fud" secondAttribute="bottom" constant="40" id="3bT-BV-jZg"/>
+                                    <constraint firstItem="8cm-cJ-fud" firstAttribute="leading" secondItem="n0c-D2-Y4f" secondAttribute="leading" id="5nf-vI-yQk"/>
+                                    <constraint firstItem="kGb-eW-jdf" firstAttribute="leading" secondItem="n0c-D2-Y4f" secondAttribute="leading" id="6Rp-qG-RIr"/>
+                                    <constraint firstItem="OBL-hT-8BQ" firstAttribute="leading" secondItem="n0c-D2-Y4f" secondAttribute="leading" id="7lp-VK-b9j"/>
+                                    <constraint firstItem="8cm-cJ-fud" firstAttribute="top" secondItem="OBL-hT-8BQ" secondAttribute="bottom" constant="21" id="8g2-Ec-Ufu"/>
+                                    <constraint firstAttribute="bottom" secondItem="kGb-eW-jdf" secondAttribute="bottom" constant="40" id="LoD-HK-P9I"/>
+                                    <constraint firstItem="kGb-eW-jdf" firstAttribute="top" secondItem="Fh3-ER-DX9" secondAttribute="bottom" constant="40" id="MaN-eH-IBn"/>
+                                    <constraint firstItem="OBL-hT-8BQ" firstAttribute="top" secondItem="n0c-D2-Y4f" secondAttribute="top" id="P8f-LY-QVo"/>
+                                    <constraint firstItem="Fh3-ER-DX9" firstAttribute="leading" secondItem="n0c-D2-Y4f" secondAttribute="leading" id="WJA-c1-fPy"/>
+                                    <constraint firstAttribute="trailing" secondItem="kGb-eW-jdf" secondAttribute="trailing" id="cjq-Xo-aQE"/>
+                                    <constraint firstAttribute="trailing" secondItem="Fh3-ER-DX9" secondAttribute="trailing" id="sLH-uI-ren"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="MainBackground"/>
+                        <constraints>
+                            <constraint firstItem="n0c-D2-Y4f" firstAttribute="leading" secondItem="kx4-a2-jzf" secondAttribute="leading" constant="28" id="G1d-Ns-iiD"/>
+                            <constraint firstItem="kx4-a2-jzf" firstAttribute="bottom" secondItem="n0c-D2-Y4f" secondAttribute="bottom" id="ViC-7W-8UX"/>
+                            <constraint firstItem="n0c-D2-Y4f" firstAttribute="top" secondItem="kx4-a2-jzf" secondAttribute="top" constant="46" id="l4S-8i-rBo"/>
+                            <constraint firstItem="kx4-a2-jzf" firstAttribute="trailing" secondItem="n0c-D2-Y4f" secondAttribute="trailing" constant="28" id="msr-wf-BoJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="kx4-a2-jzf"/>
                     </view>
+                    <connections>
+                        <outlet property="continueButton" destination="kGb-eW-jdf" id="PPQ-P0-1U4"/>
+                        <outlet property="fields" destination="Fh3-ER-DX9" id="O4V-gx-c5S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jpV-ha-plR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="130"/>
+            <point key="canvasLocation" x="-152.17391304347828" y="34.151785714285715"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="DisabledButton">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.83137254901960778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FieldBackground">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FieldLabelText">
+            <color red="0.4392156862745098" green="0.43529411764705883" blue="0.49411764705882355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
