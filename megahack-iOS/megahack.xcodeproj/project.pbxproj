@@ -32,13 +32,8 @@
 		647D6709245D10A400442029 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 647D6708245D10A400442029 /* Colors.xcassets */; };
 		647D670B245D124C00442029 /* EventOnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D670A245D124C00442029 /* EventOnBoardingViewController.swift */; };
 		647D670E245D1EC400442029 /* FieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D670D245D1EC400442029 /* FieldCell.swift */; };
-		647D6713245D433800442029 /* EventBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D6711245D433800442029 /* EventBannerCell.swift */; };
-		647D6714245D433800442029 /* EventBannerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 647D6712245D433800442029 /* EventBannerCell.xib */; };
 		647D6716245D463D00442029 /* GeneralProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 647D6715245D463D00442029 /* GeneralProfile.storyboard */; };
 		647D6718245D479100442029 /* Notifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 647D6717245D479100442029 /* Notifications.storyboard */; };
-		647D671F245DBA4F00442029 /* EventDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D671D245DBA4F00442029 /* EventDataCell.swift */; };
-		647D6720245DBA4F00442029 /* EventDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 647D671E245DBA4F00442029 /* EventDataCell.xib */; };
-		647D6725245DC99300442029 /* EventHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D6724245DC99300442029 /* EventHomeController.swift */; };
 		647D6727245DFA7800442029 /* EventHomeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D6726245DFA7800442029 /* EventHomeTableView.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,13 +65,8 @@
 		647D6708245D10A400442029 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		647D670A245D124C00442029 /* EventOnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventOnBoardingViewController.swift; sourceTree = "<group>"; };
 		647D670D245D1EC400442029 /* FieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldCell.swift; sourceTree = "<group>"; };
-		647D6711245D433800442029 /* EventBannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBannerCell.swift; sourceTree = "<group>"; };
-		647D6712245D433800442029 /* EventBannerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventBannerCell.xib; sourceTree = "<group>"; };
 		647D6715245D463D00442029 /* GeneralProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GeneralProfile.storyboard; sourceTree = "<group>"; };
 		647D6717245D479100442029 /* Notifications.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notifications.storyboard; sourceTree = "<group>"; };
-		647D671D245DBA4F00442029 /* EventDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDataCell.swift; sourceTree = "<group>"; };
-		647D671E245DBA4F00442029 /* EventDataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventDataCell.xib; sourceTree = "<group>"; };
-		647D6724245DC99300442029 /* EventHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHomeController.swift; sourceTree = "<group>"; };
 		647D6726245DFA7800442029 /* EventHomeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHomeTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,7 +116,6 @@
 			children = (
 				647D66C5245C82CC00442029 /* ViewController.swift */,
 				647D670A245D124C00442029 /* EventOnBoardingViewController.swift */,
-				647D6724245DC99300442029 /* EventHomeController.swift */,
 				647D6726245DFA7800442029 /* EventHomeTableView.swift */,
 			);
 			path = Controllers;
@@ -252,10 +241,6 @@
 			isa = PBXGroup;
 			children = (
 				647D670D245D1EC400442029 /* FieldCell.swift */,
-				647D6711245D433800442029 /* EventBannerCell.swift */,
-				647D6712245D433800442029 /* EventBannerCell.xib */,
-				647D671D245DBA4F00442029 /* EventDataCell.swift */,
-				647D671E245DBA4F00442029 /* EventDataCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -323,8 +308,6 @@
 				647D66CE245C82CD00442029 /* LaunchScreen.storyboard in Resources */,
 				647D66CB245C82CD00442029 /* Assets.xcassets in Resources */,
 				647D66DB245C870100442029 /* EventHome.storyboard in Resources */,
-				647D6714245D433800442029 /* EventBannerCell.xib in Resources */,
-				647D6720245DBA4F00442029 /* EventDataCell.xib in Resources */,
 				647D6716245D463D00442029 /* GeneralProfile.storyboard in Resources */,
 				647D66C9245C82CC00442029 /* Main.storyboard in Resources */,
 			);
@@ -338,10 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				647D66E7245CD09E00442029 /* RoomType.swift in Sources */,
-				647D6725245DC99300442029 /* EventHomeController.swift in Sources */,
 				647D66F0245CD76B00442029 /* RealTimeTool.swift in Sources */,
-				647D671F245DBA4F00442029 /* EventDataCell.swift in Sources */,
-				647D6713245D433800442029 /* EventBannerCell.swift in Sources */,
 				647D66F4245CD90600442029 /* UserType.swift in Sources */,
 				647D66F2245CD87A00442029 /* Room.swift in Sources */,
 				647D66FF245CDE1600442029 /* FieldRepository.swift in Sources */,

@@ -8,7 +8,7 @@
 
 import UIKit
 
-private let reuseIdentifiers = [EventBannerCell.identifier, EventDataCell.identifier]
+private let reuseIdentifiers = ["EventBannerCell", "EventDataCell"]
 
 
 class EventHomeTableView: UITableViewController {
