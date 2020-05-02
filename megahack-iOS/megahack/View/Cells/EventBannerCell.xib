@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="EventBannerCell" customModule="megahack" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="318" height="344"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="318" height="344"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MegaHack" translatesAutoresizingMaskIntoConstraints="NO" id="CSC-AN-HmF" userLabel="Image">
+                        <rect key="frame" x="0.0" y="0.0" width="318" height="320"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="320" id="8CS-om-6Rk"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KVM-8t-mGG" userLabel="NameView">
+                        <rect key="frame" x="73" y="296" width="172" height="48"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mega Hack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKv-z2-3RI">
+                                <rect key="frame" x="0.0" y="0.0" width="172" height="48"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" name="MainBackground"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="LightRed"/>
+                        <constraints>
+                            <constraint firstItem="lKv-z2-3RI" firstAttribute="leading" secondItem="KVM-8t-mGG" secondAttribute="leading" id="PSF-vZ-uO2"/>
+                            <constraint firstAttribute="width" constant="172" id="hqq-Fu-VZr"/>
+                            <constraint firstAttribute="trailing" secondItem="lKv-z2-3RI" secondAttribute="trailing" id="n0m-zz-dWX"/>
+                            <constraint firstAttribute="height" constant="48" id="rFJ-pc-y7h"/>
+                            <constraint firstItem="lKv-z2-3RI" firstAttribute="top" secondItem="KVM-8t-mGG" secondAttribute="top" id="tFM-Fm-reb"/>
+                            <constraint firstAttribute="bottom" secondItem="lKv-z2-3RI" secondAttribute="bottom" id="yoP-VF-oOM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" name="MainBackground"/>
+            <constraints>
+                <constraint firstItem="KVM-8t-mGG" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="89d-y1-T1b"/>
+                <constraint firstItem="CSC-AN-HmF" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="8Ie-je-5Tw"/>
+                <constraint firstItem="KVM-8t-mGG" firstAttribute="centerY" secondItem="CSC-AN-HmF" secondAttribute="bottom" id="VlD-Fd-eKW"/>
+                <constraint firstAttribute="top" secondItem="CSC-AN-HmF" secondAttribute="top" id="gZh-3J-6PV"/>
+                <constraint firstItem="KVM-8t-mGG" firstAttribute="centerY" secondItem="CSC-AN-HmF" secondAttribute="bottom" id="jbN-Mf-uFh"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="CSC-AN-HmF" secondAttribute="trailing" id="kIS-XO-ev4"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="318" height="344"/>
+            <connections>
+                <outlet property="eventName" destination="lKv-z2-3RI" id="BOz-jg-XsY"/>
+            </connections>
+            <point key="canvasLocation" x="208.69565217391306" y="218.97321428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="MegaHack" width="375" height="319"/>
+        <namedColor name="LightRed">
+            <color red="0.92549019607843142" green="0.41960784313725491" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

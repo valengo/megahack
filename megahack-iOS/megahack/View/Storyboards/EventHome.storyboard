@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aGL-hm-svZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SNz-Ta-Kgb">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n0c-D2-Y4f">
-                                <rect key="frame" x="28" y="90" width="358" height="772"/>
+                                <rect key="frame" x="28" y="90" width="358" height="723"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OBL-hT-8BQ">
                                         <rect key="frame" x="0.0" y="0.0" width="201" height="60"/>
@@ -35,7 +35,7 @@ Mega Hack 2020!</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Fh3-ER-DX9">
-                                        <rect key="frame" x="0.0" y="138.5" width="358" height="503.5"/>
+                                        <rect key="frame" x="0.0" y="138.5" width="358" height="454.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="S2V-b5-V7F">
                                             <size key="itemSize" width="128" height="128"/>
@@ -73,7 +73,7 @@ Mega Hack 2020!</string>
                                         </cells>
                                     </collectionView>
                                     <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="kGb-eW-jdf">
-                                        <rect key="frame" x="0.0" y="682" width="358" height="50"/>
+                                        <rect key="frame" x="0.0" y="633" width="358" height="50"/>
                                         <color key="backgroundColor" name="DisabledButton"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="T5a-S4-9me"/>
@@ -83,7 +83,7 @@ Mega Hack 2020!</string>
                                             <color key="titleColor" name="MainBackground"/>
                                         </state>
                                         <connections>
-                                            <segue destination="yRI-eA-MNl" kind="presentation" modalPresentationStyle="fullScreen" id="2Zy-O1-Kmy"/>
+                                            <segue destination="yRI-eA-MNl" kind="presentation" modalPresentationStyle="currentContext" id="2Zy-O1-Kmy"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -112,6 +112,7 @@ Mega Hack 2020!</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kx4-a2-jzf"/>
                     </view>
+                    <navigationItem key="navigationItem" id="yUD-jz-p1r"/>
                     <connections>
                         <outlet property="continueButton" destination="kGb-eW-jdf" id="PPQ-P0-1U4"/>
                         <outlet property="fields" destination="Fh3-ER-DX9" id="O4V-gx-c5S"/>
@@ -119,7 +120,7 @@ Mega Hack 2020!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jpV-ha-plR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-165" y="33"/>
+            <point key="canvasLocation" x="744.92753623188412" y="32.8125"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="NJI-YU-XRV">
@@ -130,7 +131,7 @@ Mega Hack 2020!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VGY-0m-Qvb">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MegaHack" translatesAutoresizingMaskIntoConstraints="NO" id="YCE-S2-oWl">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="319"/>
@@ -172,7 +173,7 @@ Mega Hack 2020!</string>
                             <constraint firstItem="VGY-0m-Qvb" firstAttribute="leading" secondItem="F25-Qd-Inx" secondAttribute="leading" id="58Y-Gj-YAw"/>
                             <constraint firstItem="VGY-0m-Qvb" firstAttribute="top" secondItem="xqf-rI-hYj" secondAttribute="top" id="6z2-9u-Gio"/>
                             <constraint firstItem="F25-Qd-Inx" firstAttribute="trailing" secondItem="VGY-0m-Qvb" secondAttribute="trailing" id="HUb-wV-dVP"/>
-                            <constraint firstAttribute="bottom" secondItem="VGY-0m-Qvb" secondAttribute="bottom" id="vB8-KE-N3d"/>
+                            <constraint firstItem="F25-Qd-Inx" firstAttribute="bottom" secondItem="VGY-0m-Qvb" secondAttribute="bottom" id="vB8-KE-N3d"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="F25-Qd-Inx"/>
                     </view>
@@ -180,11 +181,31 @@ Mega Hack 2020!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KL7-fY-fEK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="579.71014492753625" y="33.482142857142854"/>
+            <point key="canvasLocation" x="1489.8550724637682" y="33.482142857142854"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Y0C-9w-ksk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="SNz-Ta-Kgb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="house" catalog="system" id="nWv-fX-mfv" userLabel="Home"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GFA-HH-AXJ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aGL-hm-svZ" kind="relationship" relationship="rootViewController" id="thH-cQ-Lqe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nq6-LX-h3O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-22" y="33"/>
         </scene>
     </scenes>
     <resources>
         <image name="MegaHack" width="375" height="319"/>
+        <image name="house" catalog="system" width="128" height="110"/>
         <namedColor name="DisabledButton">
             <color red="0.7803921568627451" green="0.7803921568627451" blue="0.83137254901960778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
