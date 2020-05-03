@@ -12,7 +12,7 @@
         <!--Event On Boarding View Controller-->
         <scene sceneID="uxA-ju-nhY">
             <objects>
-                <viewController storyboardIdentifier="EventHomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aGL-hm-svZ" customClass="EventOnBoardingViewController" customModule="megahack" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EventHomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aGL-hm-svZ" customClass="EventOnBoardingViewController" customModule="Pina" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Spc-Jo-r0j">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,10 +44,10 @@ Mega Hack 2020!</string>
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FieldCell" id="viz-XP-G6w" customClass="FieldCell" customModule="megahack" customModuleProvider="target">
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FieldCell" id="viz-XP-G6w" customClass="FieldCell" customModule="Pina" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="72.5" height="34.5"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="QSF-h5-1Gv" customClass="RoundedBorderView" customModule="megahack" customModuleProvider="target">
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="QSF-h5-1Gv" customClass="RoundedBorderView" customModule="Pina" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="72.5" height="34.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
@@ -77,7 +77,7 @@ Mega Hack 2020!</string>
                                             </collectionViewCell>
                                         </cells>
                                     </collectionView>
-                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="kGb-eW-jdf" customClass="RoundedButton" customModule="megahack" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="kGb-eW-jdf" customClass="RoundedButton" customModule="Pina" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="633" width="358" height="50"/>
                                         <color key="backgroundColor" name="DisabledButton"/>
                                         <constraints>
@@ -149,7 +149,7 @@ Mega Hack 2020!</string>
         <!--Event Home Table View-->
         <scene sceneID="NpP-ZY-g6b">
             <objects>
-                <tableViewController id="ywQ-HK-az2" customClass="EventHomeTableView" customModule="megahack" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="ywQ-HK-az2" customClass="EventHomeTableView" customModule="Pina" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="yBU-gf-fnd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -168,7 +168,7 @@ Mega Hack 2020!</string>
                                                 <constraint firstAttribute="height" constant="320" id="ASU-Th-oWQ"/>
                                             </constraints>
                                         </imageView>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vPH-Wk-kbZ" userLabel="NameView" customClass="RoundedBorderView" customModule="megahack" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vPH-Wk-kbZ" userLabel="NameView" customClass="RoundedBorderView" customModule="Pina" customModuleProvider="target">
                                             <rect key="frame" x="121" y="296" width="172" height="48"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mega Hack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1y-P1-aCH">
@@ -205,7 +205,7 @@ Mega Hack 2020!</string>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" name="MainBackground"/>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventDataCell" id="KHG-5K-bNJ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="EventDataCell" id="KHG-5K-bNJ">
                                 <rect key="frame" x="0.0" y="378" width="414" height="97"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KHG-5K-bNJ" id="Tuz-Zu-Kae">
@@ -292,14 +292,14 @@ Mega Hack 2020!</string>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" name="MainBackground"/>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeaturingNowCard" id="0fy-KR-dQI">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FeaturingNowCard" id="0fy-KR-dQI">
                                 <rect key="frame" x="0.0" y="475" width="414" height="85"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0fy-KR-dQI" id="32A-fD-Oo4">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="85"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7mz-Ry-qTb" customClass="RoundedBorderView" customModule="megahack" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7mz-Ry-qTb" customClass="RoundedBorderView" customModule="Pina" customModuleProvider="target">
                                             <rect key="frame" x="30" y="30" width="354" height="45"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acontecendo agora!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZX-oA-39Q">
@@ -342,7 +342,7 @@ Mega Hack 2020!</string>
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NetworkFeatureCard" id="f4u-Eq-Mbk">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="NetworkFeatureCard" id="f4u-Eq-Mbk">
                                 <rect key="frame" x="0.0" y="560" width="414" height="157"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f4u-Eq-Mbk" id="4lg-FQ-ttA">
@@ -352,7 +352,7 @@ Mega Hack 2020!</string>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gI7-YF-1EI">
                                             <rect key="frame" x="0.0" y="30" width="384" height="127"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g6F-Ch-N9V" customClass="RoundedBorderView" customModule="megahack" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g6F-Ch-N9V" customClass="RoundedBorderView" customModule="Pina" customModuleProvider="target">
                                                     <rect key="frame" x="30" y="0.0" width="354" height="127"/>
                                                     <color key="backgroundColor" name="MainBackground"/>
                                                     <userDefinedRuntimeAttributes>
@@ -418,7 +418,7 @@ Mega Hack 2020!</string>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" name="MainBackground"/>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SponsorsFeatureCard" id="cfa-Vu-NCG">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="SponsorsFeatureCard" id="cfa-Vu-NCG">
                                 <rect key="frame" x="0.0" y="717" width="414" height="157"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cfa-Vu-NCG" id="kyD-Vq-X3D">
@@ -436,7 +436,7 @@ Mega Hack 2020!</string>
                                                         <constraint firstAttribute="width" constant="121" id="QfW-qO-ePq"/>
                                                     </constraints>
                                                 </view>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o7Z-dh-4Mg" customClass="RoundedBorderView" customModule="megahack" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o7Z-dh-4Mg" customClass="RoundedBorderView" customModule="Pina" customModuleProvider="target">
                                                     <rect key="frame" x="30" y="0.0" width="354" height="127"/>
                                                     <color key="backgroundColor" name="MainBackground"/>
                                                     <userDefinedRuntimeAttributes>
@@ -504,7 +504,7 @@ Mega Hack 2020!</string>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" name="MainBackground"/>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScheduleFeatureCard" id="ob6-tr-sNB">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ScheduleFeatureCard" id="ob6-tr-sNB">
                                 <rect key="frame" x="0.0" y="874" width="414" height="177"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ob6-tr-sNB" id="kxD-dE-dwM">
@@ -522,7 +522,7 @@ Mega Hack 2020!</string>
                                                         <constraint firstAttribute="width" constant="121" id="mBH-7t-Rtj"/>
                                                     </constraints>
                                                 </view>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jZZ-kD-J11" customClass="RoundedBorderView" customModule="megahack" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jZZ-kD-J11" customClass="RoundedBorderView" customModule="Pina" customModuleProvider="target">
                                                     <rect key="frame" x="30" y="0.0" width="354" height="127"/>
                                                     <color key="backgroundColor" name="MainBackground"/>
                                                     <userDefinedRuntimeAttributes>

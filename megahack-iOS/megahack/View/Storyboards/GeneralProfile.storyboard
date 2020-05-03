@@ -142,6 +142,9 @@
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Linkedin" translatesAutoresizingMaskIntoConstraints="NO" id="gus-DQ-ENC">
                                                             <rect key="frame" x="0.0" y="0.0" width="88.5" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="lQe-lP-ayZ"/>
+                                                            </constraints>
                                                         </imageView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Behance" translatesAutoresizingMaskIntoConstraints="NO" id="gbE-Im-7lx">
                                                             <rect key="frame" x="88.5" y="0.0" width="88.5" height="50"/>
@@ -233,7 +236,7 @@
         <image name="Behance" width="46" height="46"/>
         <image name="Dribble" width="49" height="49"/>
         <image name="Joseph" width="160" height="160"/>
-        <image name="Linkedin" width="50" height="50"/>
+        <image name="Linkedin" width="500" height="500"/>
         <image name="Whatsapp" width="50" height="50"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <namedColor name="LightRed">

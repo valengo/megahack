@@ -53,6 +53,8 @@
 		647D674C245E8B9F00442029 /* NetworkingCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D674B245E8B9F00442029 /* NetworkingCategory.swift */; };
 		647D674E245E8BDB00442029 /* NetworkingCategoryLocalSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D674D245E8BDB00442029 /* NetworkingCategoryLocalSource.swift */; };
 		647D6750245E8DC700442029 /* NetworkingCategoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D674F245E8DC700442029 /* NetworkingCategoryRepository.swift */; };
+		647D6752245E91C800442029 /* Sponsors.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 647D6751245E91C800442029 /* Sponsors.storyboard */; };
+		647D6754245E94FF00442029 /* SponsorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D6753245E94FF00442029 /* SponsorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +106,8 @@
 		647D674B245E8B9F00442029 /* NetworkingCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingCategory.swift; sourceTree = "<group>"; };
 		647D674D245E8BDB00442029 /* NetworkingCategoryLocalSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingCategoryLocalSource.swift; sourceTree = "<group>"; };
 		647D674F245E8DC700442029 /* NetworkingCategoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingCategoryRepository.swift; sourceTree = "<group>"; };
+		647D6751245E91C800442029 /* Sponsors.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sponsors.storyboard; sourceTree = "<group>"; };
+		647D6753245E94FF00442029 /* SponsorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +160,7 @@
 				647D672D245E18B700442029 /* NotificationTableView.swift */,
 				647D673D245E4AE600442029 /* ProfileViewController.swift */,
 				647D6741245E7D1C00442029 /* NetworkingViewController.swift */,
+				647D6753245E94FF00442029 /* SponsorViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -190,6 +195,7 @@
 				647D6715245D463D00442029 /* GeneralProfile.storyboard */,
 				647D6717245D479100442029 /* Notifications.storyboard */,
 				647D673F245E6D5400442029 /* Networking.storyboard */,
+				647D6751245E91C800442029 /* Sponsors.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -371,6 +377,7 @@
 				647D66CB245C82CD00442029 /* Assets.xcassets in Resources */,
 				647D6740245E6D5400442029 /* Networking.storyboard in Resources */,
 				647D66DB245C870100442029 /* EventHome.storyboard in Resources */,
+				647D6752245E91C800442029 /* Sponsors.storyboard in Resources */,
 				647D6716245D463D00442029 /* GeneralProfile.storyboard in Resources */,
 				647D66C9245C82CC00442029 /* Main.storyboard in Resources */,
 			);
@@ -404,6 +411,7 @@
 				647D66DE245C8CC500442029 /* IntegrationManager.swift in Sources */,
 				647D66EA245CD36800442029 /* RealTimeType.swift in Sources */,
 				647D6736245E38E500442029 /* NotificationGroupCell.swift in Sources */,
+				647D6754245E94FF00442029 /* SponsorViewController.swift in Sources */,
 				647D6742245E7D1C00442029 /* NetworkingViewController.swift in Sources */,
 				647D66C2245C82CC00442029 /* AppDelegate.swift in Sources */,
 				647D674C245E8B9F00442029 /* NetworkingCategory.swift in Sources */,

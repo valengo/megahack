@@ -48,6 +48,8 @@ class EventHomeTableView: UITableViewController {
         
         if reuseIdentifier == "NetworkFeatureCard" {
             present(storyboardName: "Networking", controllerName: "NetworkingViewController")
+        } else if reuseIdentifier == "SponsorsFeatureCard" {
+            present(storyboardName: "Sponsors", controllerName: "SponsorViewController")
         }
     }
 
