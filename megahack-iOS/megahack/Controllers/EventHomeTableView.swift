@@ -44,6 +44,7 @@ class EventHomeTableView: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+                
         let reuseIdentifier = reuseIdentifiers[indexPath.row]
         
         if reuseIdentifier == "NetworkFeatureCard" {
