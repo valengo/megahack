@@ -38,83 +38,88 @@ class TwilioViewController: UIViewController, RoomDelegate, LocalParticipantDele
         urlSession.dataTask(with: url) { (data, _, error) in
             guard let data = data, let token = String(data: data, encoding: .utf8) else { return }
             self.accessToken = token
+            print("Got access token")
+            self.setUpVideo()
         }.resume()
-        
+    }
+    
+    func setUpVideo() {
         guard let frontCamera = CameraSource.captureDevice(position: .front) else { return }
 
         if let camera = CameraSource(delegate: self) {
             localVideoTrack = LocalVideoTrack(source: camera)
 
-            let renderer = VideoView(frame: self.view.bounds)
-            renderer.backgroundColor = .black
-
-            localVideoTrack?.addRenderer(renderer)
+//            let renderer = VideoView(frame: self.view.bounds)
+//            renderer.backgroundColor = .black
+//
+//            localVideoTrack?.addRenderer(renderer)
             self.camera = camera
-            self.view.addSubview(renderer)
+//            self.view.addSubview(renderer)
 
             camera.startCapture(device: frontCamera)
+            self.createARoom()
         }
     }
 
-//    @IBAction func createARoom(_ sender: Any) {
-//        let connectOptions = ConnectOptions(token: accessToken) { (builder) in
-//            builder.roomName = "roomie"
-//
-//            if let audioTrack = self.localAudioTrack {
-//                builder.audioTracks = [audioTrack]
-//            }
-//            if let dataTrack = self.localDataTrack {
-//                builder.dataTracks = [dataTrack]
-//            }
-//            if let videoTrack = self.localVideoTrack {
-//                builder.videoTracks = [videoTrack]
-//            }
-//            print("Connecting to \(builder.roomName ?? "")")
-//        }
-//        room = TwilioVideoSDK.connect(options: connectOptions, delegate: self)
-//    }
-//
-//    func roomDidConnect(room: Room) {
-//        print("Did connect to Room: " + room.name)
-//
-//        if let localParticipant = room.localParticipant {
-//            print("Local identity \(localParticipant.identity)")
-//
-//            // Set the delegate of the local particiant to receive callbacks
-//            localParticipant.delegate = self
-//        }
-//
-//        print("Number of connected Participants \(room.remoteParticipants.count)")
-//
-//        for remoteParticipant in room.remoteParticipants {
-//            remoteParticipant.delegate = self
-//        }
-//    }
-//
-//    func participantDidConnect(room: Room, participant: RemoteParticipant) {
-//        print("Participant \(participant.identity) has joined Room \(room.name)")
-//
-//        participant.delegate = self
-//    }
-//
-//    func participantDidDisconnect(room: Room, participant: RemoteParticipant) {
-//        print("Participant \(participant.identity) has left Room \(room.name)")
-//    }
-//
-//    func didSubscribeToVideoTrack(videoTrack: RemoteVideoTrack, publication: RemoteVideoTrackPublication, participant: RemoteParticipant) {
-//        print("Participant \(participant.identity) added a video track.")
-//
-//        if let remoteView = VideoView.init(frame: self.view.bounds, delegate: self) {
-//            videoTrack.addRenderer(remoteView)
-//            self.videoView.addSubview(remoteView)
-//            self.remoteView = remoteView
-//        }
-//    }
-//
-//    func videoViewDimensionsDidChange(view: VideoView, dimensions: CMVideoDimensions) {
-//        self.view.setNeedsLayout()
-//    }
-//
+    func createARoom() {
+        let connectOptions = ConnectOptions(token: accessToken) { (builder) in
+            builder.roomName = self.roomName
+
+            if let audioTrack = self.localAudioTrack {
+                builder.audioTracks = [audioTrack]
+            }
+            if let dataTrack = self.localDataTrack {
+                builder.dataTracks = [dataTrack]
+            }
+            if let videoTrack = self.localVideoTrack {
+                builder.videoTracks = [videoTrack]
+            }
+            print("Connecting to \(builder.roomName ?? "")")
+        }
+        room = TwilioVideoSDK.connect(options: connectOptions, delegate: self)
+    }
+
+    func roomDidConnect(room: Room) {
+        print("Did connect to Room: " + room.name)
+
+        if let localParticipant = room.localParticipant {
+            print("Local identity \(localParticipant.identity)")
+
+            // Set the delegate of the local particiant to receive callbacks
+            localParticipant.delegate = self
+        }
+
+        print("Number of connected Participants \(room.remoteParticipants.count)")
+
+        for remoteParticipant in room.remoteParticipants {
+            remoteParticipant.delegate = self
+        }
+    }
+
+    func participantDidConnect(room: Room, participant: RemoteParticipant) {
+        print("Participant \(participant.identity) has joined Room \(room.name)")
+
+        participant.delegate = self
+    }
+
+    func participantDidDisconnect(room: Room, participant: RemoteParticipant) {
+        print("Participant \(participant.identity) has left Room \(room.name)")
+    }
+
+    func didSubscribeToVideoTrack(videoTrack: RemoteVideoTrack, publication: RemoteVideoTrackPublication, participant: RemoteParticipant) {
+        print("Participant \(participant.identity) added a video track.")
+
+        if let remoteView = VideoView.init(frame: self.view.bounds, delegate: self) {
+            videoTrack.addRenderer(remoteView)
+            self.view.addSubview(remoteView)
+            self.remoteView = remoteView
+        }
+    }
+
+    func videoViewDimensionsDidChange(view: VideoView, dimensions: CMVideoDimensions) {
+        self.view.setNeedsLayout()
+    }
+
 
     /*
     // MARK: - Navigation

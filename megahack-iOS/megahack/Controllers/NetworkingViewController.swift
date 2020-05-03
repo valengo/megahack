@@ -99,6 +99,7 @@ extension NetworkingViewController: UITableViewDelegate {
                     
             if let vc = vc as? TwilioViewController {
                 vc.modalPresentationStyle = .fullScreen
+                vc.roomName = "MegaHack" //Ver como pegar o nome da sala
                 present(vc, animated: true, completion: nil)
             }
             
