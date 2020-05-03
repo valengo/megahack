@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1ABF3F4C33EEB0B6C90906B5 /* Pods_megahack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FD19817F375AE93F41DD75 /* Pods_megahack.framework */; };
 		1FFFFB64245F33C700F1B776 /* TwilioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFFFB63245F33C700F1B776 /* TwilioViewController.swift */; };
+		1FFFFB66245F87C100F1B776 /* RemoteViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFFFB65245F87C000F1B776 /* RemoteViewCell.swift */; };
 		647D66C2245C82CC00442029 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D66C1245C82CC00442029 /* AppDelegate.swift */; };
 		647D66C4245C82CC00442029 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D66C3245C82CC00442029 /* SceneDelegate.swift */; };
 		647D66C6245C82CC00442029 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D66C5245C82CC00442029 /* ViewController.swift */; };
@@ -68,6 +69,7 @@
 /* Begin PBXFileReference section */
 		14FD19817F375AE93F41DD75 /* Pods_megahack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_megahack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FFFFB63245F33C700F1B776 /* TwilioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwilioViewController.swift; sourceTree = "<group>"; };
+		1FFFFB65245F87C000F1B776 /* RemoteViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteViewCell.swift; sourceTree = "<group>"; };
 		2D7C08D8E0ED4CCF6E0410F5 /* Pods-megahack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-megahack.release.xcconfig"; path = "Target Support Files/Pods-megahack/Pods-megahack.release.xcconfig"; sourceTree = "<group>"; };
 		647D66BE245C82CC00442029 /* Pina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		647D66C1245C82CC00442029 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -328,6 +330,7 @@
 				647D6749245E86DD00442029 /* CategoryCell.swift */,
 				6499A9E3245F26250041DFD6 /* ProfileCell.swift */,
 				6499A9E4245F26250041DFD6 /* ProfileCell.xib */,
+				1FFFFB65245F87C000F1B776 /* RemoteViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -514,6 +517,7 @@
 				647D6703245D0AC400442029 /* FieldLocalSource.swift in Sources */,
 				647D6727245DFA7800442029 /* EventHomeTableView.swift in Sources */,
 				647D6730245E18F400442029 /* EventNotification.swift in Sources */,
+				1FFFFB66245F87C100F1B776 /* RemoteViewCell.swift in Sources */,
 				647D674A245E86DD00442029 /* CategoryCell.swift in Sources */,
 				647D672E245E18B700442029 /* NotificationTableView.swift in Sources */,
 				647D66FD245CDD7A00442029 /* Repository.swift in Sources */,

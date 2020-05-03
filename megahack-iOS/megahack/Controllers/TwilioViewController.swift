@@ -14,20 +14,37 @@ class TwilioViewController: UIViewController, RoomDelegate, LocalParticipantDele
     var accessToken: String = ""
     public var roomName: String = ""
     
+    var hasAccess: Bool = false {
+        didSet {
+            if (hasAccess) {
+                self.setUpVideo()
+            }
+        }
+    }
+    
     var room: Room?
     
     var localAudioTrack = LocalAudioTrack()
     var localDataTrack = LocalDataTrack()
     var localVideoTrack: LocalVideoTrack?
     
+    var localView = VideoView()
+    
     var remoteView = VideoView()
+    
+    @IBOutlet weak var localViewContainer: UIView!
     
     var camera: CameraSource?
     
     var urlSession = URLSession.shared
     
+    @IBOutlet weak var remoteViewsCollection: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        remoteViewsCollection.delegate = self
+        remoteViewsCollection.dataSource = self
         
         var urlComponents = URLComponents(string: "https://secure-island-89588.herokuapp.com/token")
         urlComponents?.queryItems = [URLQueryItem(name:"identity", value: UIDevice.current.name)] //Podemos mudar para o nome do usuário, se fizermos essa parte
@@ -37,28 +54,31 @@ class TwilioViewController: UIViewController, RoomDelegate, LocalParticipantDele
         }
         urlSession.dataTask(with: url) { (data, _, error) in
             guard let data = data, let token = String(data: data, encoding: .utf8) else { return }
-            self.accessToken = token
-            print("Got access token")
-            self.setUpVideo()
+            DispatchQueue.main.async {
+                self.accessToken = token
+                print("Got access token")
+                self.hasAccess = true
+            }
         }.resume()
     }
     
     func setUpVideo() {
-        guard let frontCamera = CameraSource.captureDevice(position: .front) else { return }
-
-        if let camera = CameraSource(delegate: self) {
-            localVideoTrack = LocalVideoTrack(source: camera)
-
-//            let renderer = VideoView(frame: self.view.bounds)
-//            renderer.backgroundColor = .black
+//        guard let frontCamera = CameraSource.captureDevice(position: .front) else { return }
 //
-//            localVideoTrack?.addRenderer(renderer)
-            self.camera = camera
-//            self.view.addSubview(renderer)
-
-            camera.startCapture(device: frontCamera)
+//        if let camera = CameraSource(delegate: self) {
+//            localVideoTrack = LocalVideoTrack(source: camera)
+//
+//            localView = VideoView(frame: self.localViewContainer.bounds)
+//            localView.backgroundColor = .black
+//            localView.contentMode = .scaleAspectFill
+//
+//            localVideoTrack?.addRenderer(localView)
+//            self.camera = camera
+//            self.localViewContainer.addSubview(localView)
+//
+//            camera.startCapture(device: frontCamera)
             self.createARoom()
-        }
+//        }
     }
 
     func createARoom() {
@@ -109,10 +129,16 @@ class TwilioViewController: UIViewController, RoomDelegate, LocalParticipantDele
     func didSubscribeToVideoTrack(videoTrack: RemoteVideoTrack, publication: RemoteVideoTrackPublication, participant: RemoteParticipant) {
         print("Participant \(participant.identity) added a video track.")
 
-        if let remoteView = VideoView.init(frame: self.view.bounds, delegate: self) {
-            videoTrack.addRenderer(remoteView)
-            self.view.addSubview(remoteView)
-            self.remoteView = remoteView
+        DispatchQueue.main.async {
+            self.remoteViewsCollection.reloadData()
+        }
+    }
+    
+    func didUnsubscribeFromVideoTrack(videoTrack: RemoteVideoTrack, publication: RemoteVideoTrackPublication, participant: RemoteParticipant) {
+        print("Participant \(participant.identity) removed a video track.")
+
+        DispatchQueue.main.async {
+            self.remoteViewsCollection.reloadData()
         }
     }
 
@@ -131,4 +157,58 @@ class TwilioViewController: UIViewController, RoomDelegate, LocalParticipantDele
     }
     */
 
+}
+
+extension TwilioViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        guard let participants = room?.remoteParticipants.count else { return 0 }
+        return participants > 2 ? participants + 1 : participants
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RemoteViewContainer", for: indexPath) as! RemoteViewCell
+        let participants = (room?.remoteParticipants)!
+        if (indexPath.row == participants.count) {
+            self.localViewContainer.isHidden = true
+            localView.frame = cell.container.bounds
+            cell.container.addSubview(localView)
+        } else {
+            let participant = participants[indexPath.row]
+            if participant.remoteVideoTracks.count > 0 {
+                let videoPublications = participant.remoteVideoTracks
+                for publication in videoPublications {
+                    if let subscribedVideoTrack = publication.remoteTrack,
+                        publication.isTrackSubscribed {
+                        
+                        if let remoteView = VideoView.init(frame: cell.container.bounds, delegate: self) {
+                                subscribedVideoTrack.addRenderer(remoteView)
+                                remoteView.contentMode = .scaleAspectFill
+                                cell.container.addSubview(remoteView)
+                                self.remoteView = remoteView
+                            }
+                        return cell
+                    }
+                }
+            }
+        }
+        return cell
+    }
+    
+    
+}
+
+extension TwilioViewController: UICollectionViewDelegate {
+    
+}
+
+extension TwilioViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        guard let participants = room?.remoteParticipants.count else { return CGSize(width: 0, height: 0) }
+        let width = 414
+        let height = 896
+        if (participants < 3) {
+            return CGSize(width: width, height: height/participants)
+        }
+        return CGSize(width: width/2, height: height/(participants/2))
+    }
 }
