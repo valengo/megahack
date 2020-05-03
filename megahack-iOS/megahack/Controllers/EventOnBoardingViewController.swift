@@ -12,7 +12,7 @@ import UIKit
 class OnBoardingViewModel {
     let repository: FieldRepository
     var fields: [Field]
-    
+        
     init(repository: FieldRepository = FieldRepository()) {
         self.repository = repository
         self.fields = repository.getAll()
@@ -24,6 +24,8 @@ class OnBoardingViewModel {
 }
 
 class EventOnBoardingViewController: UIViewController {
+    
+    private let selectionFeedbackGenerator = UISelectionFeedbackGenerator()
     
     @IBOutlet weak var fields: UICollectionView!
     @IBOutlet weak var continueButton: UIButton!
@@ -59,6 +61,8 @@ extension EventOnBoardingViewController: UICollectionViewDelegate {
         viewModel.fields[indexPath.row].toggleSelection()
         
         collectionView.reloadItems(at: [indexPath])
+        
+        selectionFeedbackGenerator.selectionChanged()
         
         continueButton.isEnabled = true
         var buttonColor = UIColor(named: "DisabledButton")
