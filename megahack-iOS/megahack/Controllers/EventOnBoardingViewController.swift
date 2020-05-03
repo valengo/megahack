@@ -64,10 +64,11 @@ extension EventOnBoardingViewController: UICollectionViewDelegate {
         
         selectionFeedbackGenerator.selectionChanged()
         
-        continueButton.isEnabled = true
+        continueButton.isEnabled = false
         var buttonColor = UIColor(named: "DisabledButton")
         if (viewModel.isAnyFieldSelected()) {
             buttonColor =  UIColor(named: "LightRed")
+            continueButton.isEnabled = true
         }
         
         continueButton.backgroundColor = buttonColor

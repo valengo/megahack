@@ -17,6 +17,7 @@ class ProfileCell: UITableViewCell {
     @IBOutlet weak var profilePic: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var fieldLabel: UILabel!
+    @IBOutlet weak var socialMediaPic: UIImageView!
     
     
     func bind(user: UserProfile) {
@@ -25,5 +26,6 @@ class ProfileCell: UITableViewCell {
         profilePic.image = UIImage(named: user.imageName)
         nameLabel.text = user.name
         fieldLabel.text = user.field
+        socialMediaPic.image = UIImage(named: user.social.type.rawValue)
     }
 }

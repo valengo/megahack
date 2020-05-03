@@ -885,6 +885,7 @@ programação!</string>
                                             <outlet property="fieldLabel" destination="hmf-Mo-M5J" id="YYu-4B-sKE"/>
                                             <outlet property="nameLabel" destination="csb-Ik-FKn" id="JSm-Oq-d5D"/>
                                             <outlet property="profilePic" destination="Bco-y3-NU8" id="SHx-hb-5j5"/>
+                                            <outlet property="socialMediaPic" destination="EBu-Vg-dOZ" id="b6m-r7-Ip3"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

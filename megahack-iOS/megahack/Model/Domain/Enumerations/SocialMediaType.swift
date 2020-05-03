@@ -9,8 +9,9 @@
 import Foundation
 
 enum SocialMediaType: String {
-    case whatsapp
-    case telegram
-    case gmail
-    case linkedin
+    case Whatsapp
+    case Telegram
+    case Gmail
+    case Linkedin
+    case GitHub
 }

@@ -95,7 +95,16 @@ extension NetworkingViewController: UITableViewDelegate {
         
         if viewModel.isRoom(at: indexPath.row) {
             // TODO open twilio call here
+        } else if (!viewModel.isHeader(at: indexPath.row) && !viewModel.isSubheader(at: indexPath.row)) {
+            let category = viewModel.getCategory(for: indexPath.row)
+            let targetStoryboard =  UIStoryboard(name: "Networking", bundle: nil)
+            let vc = targetStoryboard.instantiateViewController(withIdentifier: "SuggestionsViewController")
+            if let vc = vc as? SuggestionsViewController {
+                vc.field = category.description
+                vc.modalPresentationStyle = .fullScreen
+            }
+            present(vc, animated: true, completion: nil)
+            
         }
     }
-    
 }
