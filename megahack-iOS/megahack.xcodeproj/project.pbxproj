@@ -37,6 +37,12 @@
 		647D6727245DFA7800442029 /* EventHomeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D6726245DFA7800442029 /* EventHomeTableView.swift */; };
 		647D672A245DFF9E00442029 /* RoundedBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D6729245DFF9E00442029 /* RoundedBorderView.swift */; };
 		647D672C245E0AC900442029 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D672B245E0AC900442029 /* RoundedButton.swift */; };
+		647D672E245E18B700442029 /* NotificationTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D672D245E18B700442029 /* NotificationTableView.swift */; };
+		647D6730245E18F400442029 /* EventNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D672F245E18F400442029 /* EventNotification.swift */; };
+		647D6732245E198C00442029 /* NotificationLocalSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D6731245E198C00442029 /* NotificationLocalSource.swift */; };
+		647D6734245E1F7000442029 /* NotificationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D6733245E1F7000442029 /* NotificationRepository.swift */; };
+		647D6736245E38E500442029 /* NotificationGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D6735245E38E500442029 /* NotificationGroupCell.swift */; };
+		647D6738245E3F7000442029 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D6737245E3F7000442029 /* NotificationCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +78,12 @@
 		647D6726245DFA7800442029 /* EventHomeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHomeTableView.swift; sourceTree = "<group>"; };
 		647D6729245DFF9E00442029 /* RoundedBorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBorderView.swift; sourceTree = "<group>"; };
 		647D672B245E0AC900442029 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		647D672D245E18B700442029 /* NotificationTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableView.swift; sourceTree = "<group>"; };
+		647D672F245E18F400442029 /* EventNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventNotification.swift; sourceTree = "<group>"; };
+		647D6731245E198C00442029 /* NotificationLocalSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationLocalSource.swift; sourceTree = "<group>"; };
+		647D6733245E1F7000442029 /* NotificationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRepository.swift; sourceTree = "<group>"; };
+		647D6735245E38E500442029 /* NotificationGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationGroupCell.swift; sourceTree = "<group>"; };
+		647D6737245E3F7000442029 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +133,7 @@
 				647D66C5245C82CC00442029 /* ViewController.swift */,
 				647D670A245D124C00442029 /* EventOnBoardingViewController.swift */,
 				647D6726245DFA7800442029 /* EventHomeTableView.swift */,
+				647D672D245E18B700442029 /* NotificationTableView.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -185,6 +198,7 @@
 				647D66ED245CD68300442029 /* Talk.swift */,
 				647D66F1245CD87A00442029 /* Room.swift */,
 				647D66F8245CDCD100442029 /* Field.swift */,
+				647D672F245E18F400442029 /* EventNotification.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -205,6 +219,7 @@
 			children = (
 				647D66F7245CDCA200442029 /* Protocols */,
 				647D66FE245CDE1600442029 /* FieldRepository.swift */,
+				647D6733245E1F7000442029 /* NotificationRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -230,6 +245,7 @@
 			children = (
 				647D6707245D0B3C00442029 /* Protocols */,
 				647D6702245D0AC400442029 /* FieldLocalSource.swift */,
+				647D6731245E198C00442029 /* NotificationLocalSource.swift */,
 			);
 			path = Local;
 			sourceTree = "<group>";
@@ -246,6 +262,8 @@
 			isa = PBXGroup;
 			children = (
 				647D670D245D1EC400442029 /* FieldCell.swift */,
+				647D6735245E38E500442029 /* NotificationGroupCell.swift */,
+				647D6737245E3F7000442029 /* NotificationCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -343,16 +361,22 @@
 				647D66C6245C82CC00442029 /* ViewController.swift in Sources */,
 				647D670B245D124C00442029 /* EventOnBoardingViewController.swift in Sources */,
 				647D66E3245CB99E00442029 /* SocialMedia.swift in Sources */,
+				647D6732245E198C00442029 /* NotificationLocalSource.swift in Sources */,
 				647D66EE245CD68300442029 /* Talk.swift in Sources */,
 				647D6705245D0AE600442029 /* LocalSource.swift in Sources */,
 				647D66DE245C8CC500442029 /* IntegrationManager.swift in Sources */,
 				647D66EA245CD36800442029 /* RealTimeType.swift in Sources */,
+				647D6736245E38E500442029 /* NotificationGroupCell.swift in Sources */,
 				647D66C2245C82CC00442029 /* AppDelegate.swift in Sources */,
 				647D6703245D0AC400442029 /* FieldLocalSource.swift in Sources */,
 				647D6727245DFA7800442029 /* EventHomeTableView.swift in Sources */,
+				647D6730245E18F400442029 /* EventNotification.swift in Sources */,
+				647D672E245E18B700442029 /* NotificationTableView.swift in Sources */,
 				647D66FD245CDD7A00442029 /* Repository.swift in Sources */,
+				647D6738245E3F7000442029 /* NotificationCell.swift in Sources */,
 				647D672A245DFF9E00442029 /* RoundedBorderView.swift in Sources */,
 				647D66E5245CBB2A00442029 /* Event.swift in Sources */,
+				647D6734245E1F7000442029 /* NotificationRepository.swift in Sources */,
 				647D66C4245C82CC00442029 /* SceneDelegate.swift in Sources */,
 				647D66F9245CDCD100442029 /* Field.swift in Sources */,
 				647D670E245D1EC400442029 /* FieldCell.swift in Sources */,

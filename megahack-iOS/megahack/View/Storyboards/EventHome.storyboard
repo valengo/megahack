@@ -614,25 +614,25 @@ programação!</string>
         <image name="pin" catalog="system" width="119" height="128"/>
         <image name="video" catalog="system" width="128" height="83"/>
         <namedColor name="CardBorder">
-            <color red="0.62352941176470589" green="0.62352941176470589" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.62400001287460327" green="0.62400001287460327" blue="0.68599998950958252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="DisabledButton">
-            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.83137254901960778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.77999997138977051" green="0.77999997138977051" blue="0.83099997043609619" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="EventText">
-            <color red="0.29803921568627451" green="0.29411764705882354" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.29800000786781311" green="0.29399999976158142" blue="0.36899998784065247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="FeaturingNow">
-            <color red="0.56502389909999995" green="0.86563307050000005" blue="0.61172813179999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.56499999761581421" green="0.86599999666213989" blue="0.6119999885559082" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="FieldBackground">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94900000095367432" green="0.94900000095367432" blue="0.97600001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="FieldLabelText">
-            <color red="0.4392156862745098" green="0.43529411764705883" blue="0.49411764705882355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.43900001049041748" green="0.43500000238418579" blue="0.49399998784065247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="LightRed">
-            <color red="0.92549019607843142" green="0.41960784313725491" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.92500001192092896" green="0.41999998688697815" blue="0.40400001406669617" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="MainBackground">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

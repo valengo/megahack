@@ -3,48 +3,132 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="1K2-xQ-bHd">
-            <objects>
-                <viewController id="XbI-B7-bwM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="EbF-sW-1tG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="MTg-lN-8KC"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="tZr-tf-pQ6"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bwy-gW-A4R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="884" y="96"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="qX2-C9-MVM">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yPm-9e-6Lz" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="yPm-9e-6Lz" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="bell" catalog="system" id="xto-F1-FxA"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qwt-LH-wo2">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="XbI-B7-bwM" kind="relationship" relationship="rootViewController" id="W7d-gv-whO"/>
+                        <segue destination="BMS-5Y-iLL" kind="relationship" relationship="rootViewController" id="Wra-v1-Alo"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="owv-s5-mBa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="96.428571428571431"/>
         </scene>
+        <!--Notification Table View-->
+        <scene sceneID="NDU-SJ-yLL">
+            <objects>
+                <tableViewController id="BMS-5Y-iLL" customClass="NotificationTableView" customModule="megahack" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="YVG-fu-OMh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="MainBackground"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotificationGroupCell" id="BPc-Jv-F5E" customClass="NotificationGroupCell" customModule="megahack" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="60.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BPc-Jv-F5E" id="9jV-eo-iYk">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="60.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hoje" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xBB-bm-Mlg">
+                                            <rect key="frame" x="30" y="30" width="354" height="20.5"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                            <color key="textColor" name="Text"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" name="MainBackground"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="xBB-bm-Mlg" secondAttribute="trailing" constant="30" id="3QN-IU-7Fn"/>
+                                        <constraint firstItem="xBB-bm-Mlg" firstAttribute="top" secondItem="9jV-eo-iYk" secondAttribute="top" constant="30" id="RpW-eh-4e0"/>
+                                        <constraint firstAttribute="bottom" secondItem="xBB-bm-Mlg" secondAttribute="bottom" constant="10" id="ViG-hg-TLN"/>
+                                        <constraint firstItem="xBB-bm-Mlg" firstAttribute="leading" secondItem="9jV-eo-iYk" secondAttribute="leading" constant="30" id="tcq-ux-s0f"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="MainBackground"/>
+                                <connections>
+                                    <outlet property="groupLabel" destination="xBB-bm-Mlg" id="S9F-SF-6hq"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotificationCell" id="rYi-hl-K82" customClass="NotificationCell" customModule="megahack" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="88.5" width="414" height="69"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rYi-hl-K82" id="e8W-pn-zZy">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="69"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="VFz-d7-7yC">
+                                            <rect key="frame" x="30" y="10" width="354" height="49"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="251" image="Fernando" translatesAutoresizingMaskIntoConstraints="NO" id="Bwa-Rq-OwL">
+                                                    <rect key="frame" x="0.0" y="0.0" width="49" height="49"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="Palestrante disponível para conversas!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47A-MS-lqi">
+                                                    <rect key="frame" x="61" y="0.0" width="264" height="49"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                                                    <color key="textColor" name="EventText"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" text="2h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7O-Uo-6gx">
+                                                    <rect key="frame" x="337" y="0.0" width="17" height="49"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                    <color key="textColor" name="EventText"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" name="MainBackground"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="VFz-d7-7yC" secondAttribute="trailing" constant="30" id="6dl-0x-Ea7"/>
+                                        <constraint firstItem="VFz-d7-7yC" firstAttribute="top" secondItem="e8W-pn-zZy" secondAttribute="top" constant="10" id="9iE-Oj-S58"/>
+                                        <constraint firstAttribute="bottom" secondItem="VFz-d7-7yC" secondAttribute="bottom" constant="10" id="gJ3-Ba-f0O"/>
+                                        <constraint firstItem="VFz-d7-7yC" firstAttribute="leading" secondItem="e8W-pn-zZy" secondAttribute="leading" constant="30" id="hwn-lL-IAX"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="MainBackground"/>
+                                <connections>
+                                    <outlet property="notificationLabel" destination="47A-MS-lqi" id="MbV-4R-lfI"/>
+                                    <outlet property="notificationTime" destination="t7O-Uo-6gx" id="zfD-K1-oQ5"/>
+                                    <outlet property="userImageView" destination="Bwa-Rq-OwL" id="tXr-Bn-xta"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="BMS-5Y-iLL" id="YYa-ok-4DL"/>
+                            <outlet property="delegate" destination="BMS-5Y-iLL" id="ggJ-zJ-SdD"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="oFe-sP-B7c"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x8C-FU-4tb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="884" y="96"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Fernando" width="49" height="49"/>
         <image name="bell" catalog="system" width="128" height="124"/>
+        <namedColor name="EventText">
+            <color red="0.29800000786781311" green="0.29399999976158142" blue="0.36899998784065247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
