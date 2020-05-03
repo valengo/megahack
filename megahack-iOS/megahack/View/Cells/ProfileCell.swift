@@ -10,15 +10,24 @@ import UIKit
 
 class ProfileCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    var user: UserProfile?
+    
+    @IBOutlet weak var profilePic: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var fieldLabel: UILabel!
+    
+    
+    func bind(user: UserProfile) {
+        self.user = user
+        
+        profilePic.image = UIImage(named: user.imageName)
+        nameLabel.text = user.name
+        fieldLabel.text = user.field
     }
     
+    func selected() {
+        if let url = user?.social.url, let socialMedia = user?.social.type {
+            IntegrationManager.shared.open(url: url, for: socialMedia)
+        }
+    }
 }

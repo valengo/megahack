@@ -18,6 +18,11 @@ class IntegrationManager {
         open(url: url)
     }
     
+    func open(url: String, for tool: SocialMediaType) {
+        open(url: url)
+    }
+    
+    
     func open(url: String) {
         if let url = URL(string: url) {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)

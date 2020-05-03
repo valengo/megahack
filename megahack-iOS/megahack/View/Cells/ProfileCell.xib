@@ -74,6 +74,11 @@
                 <constraint firstItem="008-Ko-Kqp" firstAttribute="top" secondItem="njF-e1-oar" secondAttribute="top" id="usv-IM-eb7"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="fieldLabel" destination="JA7-8A-yCT" id="L4k-aL-7MR"/>
+                <outlet property="nameLabel" destination="Bdl-g0-Z5l" id="Smi-p7-2te"/>
+                <outlet property="profilePic" destination="xFM-Gr-BjA" id="BVT-QK-TRW"/>
+            </connections>
             <point key="canvasLocation" x="99.275362318840592" y="139.95535714285714"/>
         </tableViewCell>
     </objects>
