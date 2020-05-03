@@ -11,5 +11,5 @@ import Foundation
 struct Talk {
     let id: Int
     let tools: [RealTimeTool]
-    let room: Room
+    let room: EventRoom
 }

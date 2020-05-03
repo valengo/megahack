@@ -36,7 +36,7 @@ class NetworkingViewModel {
         return row > 0 && row < roomRepository.getAll().count + 1
     }
     
-    func getRoom(for row: Int) -> Room {
+    func getRoom(for row: Int) -> EventRoom {
         return roomRepository.getAll()[row - 1]
     }
     

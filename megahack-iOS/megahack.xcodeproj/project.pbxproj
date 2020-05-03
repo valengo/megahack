@@ -24,7 +24,7 @@
 		647D66EC245CD64B00442029 /* SocialMediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D66EB245CD64B00442029 /* SocialMediaType.swift */; };
 		647D66EE245CD68300442029 /* Talk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D66ED245CD68300442029 /* Talk.swift */; };
 		647D66F0245CD76B00442029 /* RealTimeTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D66EF245CD76B00442029 /* RealTimeTool.swift */; };
-		647D66F2245CD87A00442029 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D66F1245CD87A00442029 /* Room.swift */; };
+		647D66F2245CD87A00442029 /* EventRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D66F1245CD87A00442029 /* EventRoom.swift */; };
 		647D66F4245CD90600442029 /* UserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D66F3245CD90600442029 /* UserType.swift */; };
 		647D66F9245CDCD100442029 /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D66F8245CDCD100442029 /* Field.swift */; };
 		647D66FD245CDD7A00442029 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D66FC245CDD7A00442029 /* Repository.swift */; };
@@ -62,6 +62,7 @@
 		6499A9E5245F26250041DFD6 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6499A9E3245F26250041DFD6 /* ProfileCell.swift */; };
 		6499A9E6245F26250041DFD6 /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6499A9E4245F26250041DFD6 /* ProfileCell.xib */; };
 		6499A9E8245F2E480041DFD6 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6499A9E7245F2E480041DFD6 /* UserProfile.swift */; };
+		6499A9EA245F3B310041DFD6 /* UserProfileLocalSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6499A9E9245F3B310041DFD6 /* UserProfileLocalSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,7 +86,7 @@
 		647D66EB245CD64B00442029 /* SocialMediaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaType.swift; sourceTree = "<group>"; };
 		647D66ED245CD68300442029 /* Talk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Talk.swift; sourceTree = "<group>"; };
 		647D66EF245CD76B00442029 /* RealTimeTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeTool.swift; sourceTree = "<group>"; };
-		647D66F1245CD87A00442029 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		647D66F1245CD87A00442029 /* EventRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRoom.swift; sourceTree = "<group>"; };
 		647D66F3245CD90600442029 /* UserType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserType.swift; sourceTree = "<group>"; };
 		647D66F8245CDCD100442029 /* Field.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
 		647D66FC245CDD7A00442029 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
@@ -123,6 +124,7 @@
 		6499A9E3245F26250041DFD6 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		6499A9E4245F26250041DFD6 /* ProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
 		6499A9E7245F2E480041DFD6 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		6499A9E9245F3B310041DFD6 /* UserProfileLocalSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileLocalSource.swift; sourceTree = "<group>"; };
 		FD0CCDA680B8B7C0888B9015 /* Pods-megahack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-megahack.debug.xcconfig"; path = "Target Support Files/Pods-megahack/Pods-megahack.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -247,7 +249,7 @@
 				647D66EF245CD76B00442029 /* RealTimeTool.swift */,
 				647D66E4245CBB2A00442029 /* Event.swift */,
 				647D66ED245CD68300442029 /* Talk.swift */,
-				647D66F1245CD87A00442029 /* Room.swift */,
+				647D66F1245CD87A00442029 /* EventRoom.swift */,
 				647D66F8245CDCD100442029 /* Field.swift */,
 				647D672F245E18F400442029 /* EventNotification.swift */,
 				647D674B245E8B9F00442029 /* NetworkingCategory.swift */,
@@ -303,6 +305,7 @@
 				647D6731245E198C00442029 /* NotificationLocalSource.swift */,
 				647D6743245E7F3800442029 /* RoomLocalSource.swift */,
 				647D674D245E8BDB00442029 /* NetworkingCategoryLocalSource.swift */,
+				6499A9E9245F3B310041DFD6 /* UserProfileLocalSource.swift */,
 			);
 			path = Local;
 			sourceTree = "<group>";
@@ -486,11 +489,12 @@
 				6499A9E5245F26250041DFD6 /* ProfileCell.swift in Sources */,
 				647D66F0245CD76B00442029 /* RealTimeTool.swift in Sources */,
 				647D66F4245CD90600442029 /* UserType.swift in Sources */,
-				647D66F2245CD87A00442029 /* Room.swift in Sources */,
+				647D66F2245CD87A00442029 /* EventRoom.swift in Sources */,
 				647D66FF245CDE1600442029 /* FieldRepository.swift in Sources */,
 				647D672C245E0AC900442029 /* RoundedButton.swift in Sources */,
 				647D66C6245C82CC00442029 /* ViewController.swift in Sources */,
 				647D6750245E8DC700442029 /* NetworkingCategoryRepository.swift in Sources */,
+				6499A9EA245F3B310041DFD6 /* UserProfileLocalSource.swift in Sources */,
 				647D670B245D124C00442029 /* EventOnBoardingViewController.swift in Sources */,
 				647D66E3245CB99E00442029 /* SocialMedia.swift in Sources */,
 				647D6748245E869400442029 /* RoomCell.swift in Sources */,

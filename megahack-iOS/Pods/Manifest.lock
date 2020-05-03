@@ -5,7 +5,7 @@ DEPENDENCIES:
   - TwilioVideo (~> 3.2)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/CocoaPods/Specs:
     - TwilioVideo
 
 SPEC CHECKSUMS:
