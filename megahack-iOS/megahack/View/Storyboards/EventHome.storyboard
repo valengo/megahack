@@ -283,6 +283,7 @@ Mega Hack 2020!</string>
                                             </constraints>
                                         </view>
                                     </subviews>
+                                    <color key="backgroundColor" name="MainBackground"/>
                                     <constraints>
                                         <constraint firstItem="rfv-BW-uRa" firstAttribute="top" secondItem="Tuz-Zu-Kae" secondAttribute="top" constant="20" id="0zR-dU-aad"/>
                                         <constraint firstItem="rfv-BW-uRa" firstAttribute="leading" secondItem="Tuz-Zu-Kae" secondAttribute="leading" constant="30" id="Yf4-sx-7p0"/>
@@ -717,6 +718,7 @@ programação!</string>
                                                     </constraints>
                                                 </view>
                                             </subviews>
+                                            <color key="backgroundColor" name="MainBackground"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="NTQ-aO-p5k" secondAttribute="trailing" constant="30" id="HIx-5F-wRe"/>
                                                 <constraint firstAttribute="bottom" secondItem="NTQ-aO-p5k" secondAttribute="bottom" id="UqO-Oh-Wa5"/>
@@ -781,6 +783,7 @@ programação!</string>
                                                 <constraint firstAttribute="trailing" secondItem="hL6-8u-u8z" secondAttribute="trailing" constant="30" id="rgp-j2-Fjp"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" name="MainBackground"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TalkersCell" id="atI-qn-2aC">
                                         <rect key="frame" x="0.0" y="349" width="414" height="28"/>
@@ -808,6 +811,7 @@ programação!</string>
                                                     </constraints>
                                                 </view>
                                             </subviews>
+                                            <color key="backgroundColor" name="MainBackground"/>
                                             <constraints>
                                                 <constraint firstItem="UgO-PR-wDm" firstAttribute="leading" secondItem="8wF-K5-1pj" secondAttribute="leading" constant="30" id="EFq-vJ-0ND"/>
                                                 <constraint firstAttribute="trailing" secondItem="UgO-PR-wDm" secondAttribute="trailing" constant="30" id="Zpr-M0-137"/>

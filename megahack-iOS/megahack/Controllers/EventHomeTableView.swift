@@ -54,7 +54,7 @@ class EventHomeTableView: UITableViewController {
                 
         let reuseIdentifier = reuseIdentifiers[indexPath.row]
         
-        if (reuseIdentifier == "") {
+        if (reuseIdentifier == "EventDataCell") {
             IntegrationManager.shared.open(url: "https://youtu.be/cQ8Kjgj3ck4")
         }
         else if (reuseIdentifier  == "FeaturingNowCard") {

@@ -103,6 +103,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                             </subviews>
+                                            <color key="backgroundColor" name="MainBackground"/>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="bYS-Ou-SwU" secondAttribute="bottom" id="Fkl-Ve-koy"/>
                                                 <constraint firstItem="bYS-Ou-SwU" firstAttribute="top" secondItem="AaO-aa-pnY" secondAttribute="top" constant="20" id="Xa1-Ma-ZG3"/>
@@ -188,6 +189,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                             </subviews>
+                                            <color key="backgroundColor" name="MainBackground"/>
                                             <constraints>
                                                 <constraint firstItem="1LX-tN-jRa" firstAttribute="leading" secondItem="ANK-n9-DNe" secondAttribute="leading" constant="30" id="H6k-h0-nGf"/>
                                                 <constraint firstAttribute="bottom" secondItem="1LX-tN-jRa" secondAttribute="bottom" id="UYd-0y-xS8"/>
