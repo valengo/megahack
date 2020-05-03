@@ -25,9 +25,9 @@ class EventHomeTableView: UITableViewController {
         let targetStoryboard =  UIStoryboard(name: storyboardName, bundle: nil)
         let vc = targetStoryboard.instantiateViewController(withIdentifier: controllerName)
         
-//        if let vc = vc as? TalkViewController {
-//            vc.modalPresentationStyle = .fullScreen
-//        }
+        if let vc = vc as? TalkViewController {
+            vc.modalPresentationStyle = .fullScreen
+        }
         
         present(vc, animated: true, completion: nil)
             

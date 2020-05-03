@@ -9,6 +9,8 @@
 import UIKit
 
 class ProfileCell: UITableViewCell {
+    
+    static let identifier = "\(String(describing: ProfileCell.self))"
 
     var user: UserProfile?
     
@@ -23,11 +25,5 @@ class ProfileCell: UITableViewCell {
         profilePic.image = UIImage(named: user.imageName)
         nameLabel.text = user.name
         fieldLabel.text = user.field
-    }
-    
-    func selected() {
-        if let url = user?.social.url, let socialMedia = user?.social.type {
-            IntegrationManager.shared.open(url: url, for: socialMedia)
-        }
     }
 }

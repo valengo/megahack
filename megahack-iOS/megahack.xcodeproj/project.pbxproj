@@ -59,9 +59,9 @@
 		6499A9E0245F08470041DFD6 /* TalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6499A9DF245F08470041DFD6 /* TalkViewController.swift */; };
 		6499A9E2245F250B0041DFD6 /* Twilio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6499A9E1245F250B0041DFD6 /* Twilio.storyboard */; };
 		6499A9E5245F26250041DFD6 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6499A9E3245F26250041DFD6 /* ProfileCell.swift */; };
-		6499A9E6245F26250041DFD6 /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6499A9E4245F26250041DFD6 /* ProfileCell.xib */; };
 		6499A9E8245F2E480041DFD6 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6499A9E7245F2E480041DFD6 /* UserProfile.swift */; };
 		6499A9EA245F3B310041DFD6 /* UserProfileLocalSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6499A9E9245F3B310041DFD6 /* UserProfileLocalSource.swift */; };
+		6499A9EC245F3F200041DFD6 /* UserProfileRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6499A9EB245F3F200041DFD6 /* UserProfileRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -120,9 +120,9 @@
 		6499A9DF245F08470041DFD6 /* TalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkViewController.swift; sourceTree = "<group>"; };
 		6499A9E1245F250B0041DFD6 /* Twilio.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Twilio.storyboard; sourceTree = "<group>"; };
 		6499A9E3245F26250041DFD6 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
-		6499A9E4245F26250041DFD6 /* ProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
 		6499A9E7245F2E480041DFD6 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		6499A9E9245F3B310041DFD6 /* UserProfileLocalSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileLocalSource.swift; sourceTree = "<group>"; };
+		6499A9EB245F3F200041DFD6 /* UserProfileRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileRepository.swift; sourceTree = "<group>"; };
 		FD0CCDA680B8B7C0888B9015 /* Pods-megahack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-megahack.debug.xcconfig"; path = "Target Support Files/Pods-megahack/Pods-megahack.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -274,6 +274,7 @@
 				647D6733245E1F7000442029 /* NotificationRepository.swift */,
 				647D6745245E807900442029 /* RoomRepository.swift */,
 				647D674F245E8DC700442029 /* NetworkingCategoryRepository.swift */,
+				6499A9EB245F3F200041DFD6 /* UserProfileRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -324,7 +325,6 @@
 				647D6747245E869400442029 /* RoomCell.swift */,
 				647D6749245E86DD00442029 /* CategoryCell.swift */,
 				6499A9E3245F26250041DFD6 /* ProfileCell.swift */,
-				6499A9E4245F26250041DFD6 /* ProfileCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -419,7 +419,6 @@
 				647D6718245D479100442029 /* Notifications.storyboard in Resources */,
 				647D66CE245C82CD00442029 /* LaunchScreen.storyboard in Resources */,
 				647D66CB245C82CD00442029 /* Assets.xcassets in Resources */,
-				6499A9E6245F26250041DFD6 /* ProfileCell.xib in Resources */,
 				6499A9E2245F250B0041DFD6 /* Twilio.storyboard in Resources */,
 				647D6740245E6D5400442029 /* Networking.storyboard in Resources */,
 				647D66DB245C870100442029 /* EventHome.storyboard in Resources */,
@@ -492,6 +491,7 @@
 				647D6750245E8DC700442029 /* NetworkingCategoryRepository.swift in Sources */,
 				6499A9EA245F3B310041DFD6 /* UserProfileLocalSource.swift in Sources */,
 				647D670B245D124C00442029 /* EventOnBoardingViewController.swift in Sources */,
+				6499A9EC245F3F200041DFD6 /* UserProfileRepository.swift in Sources */,
 				647D66E3245CB99E00442029 /* SocialMedia.swift in Sources */,
 				647D6748245E869400442029 /* RoomCell.swift in Sources */,
 				647D6744245E7F3800442029 /* RoomLocalSource.swift in Sources */,
