@@ -233,11 +233,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Behance" width="46" height="46"/>
-        <image name="Dribble" width="49" height="49"/>
+        <image name="Behance" width="460" height="460"/>
+        <image name="Dribble" width="490" height="490"/>
         <image name="Joseph" width="160" height="160"/>
         <image name="Linkedin" width="500" height="500"/>
-        <image name="Whatsapp" width="50" height="50"/>
+        <image name="Whatsapp" width="500" height="500"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <namedColor name="LightRed">
             <color red="0.92500001192092896" green="0.41999998688697815" blue="0.40400001406669617" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
