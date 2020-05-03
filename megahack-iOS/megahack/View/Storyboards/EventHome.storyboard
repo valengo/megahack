@@ -221,7 +221,7 @@ Mega Hack 2020!</string>
                                                         <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="vs9-U9-ZRU" userLabel="DateStack">
                                                             <rect key="frame" x="0.0" y="0.0" width="44.5" height="77"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="25" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2Q-ez-S0L">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="24" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2Q-ez-S0L">
                                                                     <rect key="frame" x="0.0" y="0.0" width="44.5" height="48"/>
                                                                     <viewLayoutGuide key="safeArea" id="fwP-mL-Iz6"/>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="40"/>
@@ -246,7 +246,7 @@ Mega Hack 2020!</string>
                                                                             <rect key="frame" x="0.0" y="1" width="21" height="48"/>
                                                                             <color key="tintColor" name="EventText"/>
                                                                         </imageView>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25/04 - 05/05" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3k-RQ-g7N">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24/04 - 05/05" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3k-RQ-g7N">
                                                                             <rect key="frame" x="31" y="0.0" width="85" height="50.5"/>
                                                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                                             <color key="textColor" name="EventText"/>
@@ -605,10 +605,10 @@ programação!</string>
         </scene>
     </scenes>
     <resources>
-        <image name="Calendar" width="222" height="171"/>
-        <image name="Guy" width="141" height="127"/>
-        <image name="MegaHack" width="375" height="319"/>
-        <image name="Sponsors" width="79" height="74"/>
+        <image name="Calendar" width="555" height="427"/>
+        <image name="Guy" width="705" height="635"/>
+        <image name="MegaHack" width="1125" height="957"/>
+        <image name="Sponsors" width="395" height="370"/>
         <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="house" catalog="system" width="128" height="110"/>
         <image name="pin" catalog="system" width="119" height="128"/>
