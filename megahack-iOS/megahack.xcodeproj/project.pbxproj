@@ -44,6 +44,15 @@
 		647D6736245E38E500442029 /* NotificationGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D6735245E38E500442029 /* NotificationGroupCell.swift */; };
 		647D6738245E3F7000442029 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D6737245E3F7000442029 /* NotificationCell.swift */; };
 		647D673E245E4AE600442029 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D673D245E4AE600442029 /* ProfileViewController.swift */; };
+		647D6740245E6D5400442029 /* Networking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 647D673F245E6D5400442029 /* Networking.storyboard */; };
+		647D6742245E7D1C00442029 /* NetworkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D6741245E7D1C00442029 /* NetworkingViewController.swift */; };
+		647D6744245E7F3800442029 /* RoomLocalSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D6743245E7F3800442029 /* RoomLocalSource.swift */; };
+		647D6746245E807900442029 /* RoomRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D6745245E807900442029 /* RoomRepository.swift */; };
+		647D6748245E869400442029 /* RoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D6747245E869400442029 /* RoomCell.swift */; };
+		647D674A245E86DD00442029 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D6749245E86DD00442029 /* CategoryCell.swift */; };
+		647D674C245E8B9F00442029 /* NetworkingCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D674B245E8B9F00442029 /* NetworkingCategory.swift */; };
+		647D674E245E8BDB00442029 /* NetworkingCategoryLocalSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D674D245E8BDB00442029 /* NetworkingCategoryLocalSource.swift */; };
+		647D6750245E8DC700442029 /* NetworkingCategoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D674F245E8DC700442029 /* NetworkingCategoryRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +95,15 @@
 		647D6735245E38E500442029 /* NotificationGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationGroupCell.swift; sourceTree = "<group>"; };
 		647D6737245E3F7000442029 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		647D673D245E4AE600442029 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		647D673F245E6D5400442029 /* Networking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Networking.storyboard; sourceTree = "<group>"; };
+		647D6741245E7D1C00442029 /* NetworkingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingViewController.swift; sourceTree = "<group>"; };
+		647D6743245E7F3800442029 /* RoomLocalSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomLocalSource.swift; sourceTree = "<group>"; };
+		647D6745245E807900442029 /* RoomRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomRepository.swift; sourceTree = "<group>"; };
+		647D6747245E869400442029 /* RoomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCell.swift; sourceTree = "<group>"; };
+		647D6749245E86DD00442029 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		647D674B245E8B9F00442029 /* NetworkingCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingCategory.swift; sourceTree = "<group>"; };
+		647D674D245E8BDB00442029 /* NetworkingCategoryLocalSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingCategoryLocalSource.swift; sourceTree = "<group>"; };
+		647D674F245E8DC700442029 /* NetworkingCategoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingCategoryRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +155,7 @@
 				647D6726245DFA7800442029 /* EventHomeTableView.swift */,
 				647D672D245E18B700442029 /* NotificationTableView.swift */,
 				647D673D245E4AE600442029 /* ProfileViewController.swift */,
+				647D6741245E7D1C00442029 /* NetworkingViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -170,6 +189,7 @@
 				647D66DA245C870100442029 /* EventHome.storyboard */,
 				647D6715245D463D00442029 /* GeneralProfile.storyboard */,
 				647D6717245D479100442029 /* Notifications.storyboard */,
+				647D673F245E6D5400442029 /* Networking.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -202,6 +222,7 @@
 				647D66F1245CD87A00442029 /* Room.swift */,
 				647D66F8245CDCD100442029 /* Field.swift */,
 				647D672F245E18F400442029 /* EventNotification.swift */,
+				647D674B245E8B9F00442029 /* NetworkingCategory.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -223,6 +244,8 @@
 				647D66F7245CDCA200442029 /* Protocols */,
 				647D66FE245CDE1600442029 /* FieldRepository.swift */,
 				647D6733245E1F7000442029 /* NotificationRepository.swift */,
+				647D6745245E807900442029 /* RoomRepository.swift */,
+				647D674F245E8DC700442029 /* NetworkingCategoryRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -249,6 +272,8 @@
 				647D6707245D0B3C00442029 /* Protocols */,
 				647D6702245D0AC400442029 /* FieldLocalSource.swift */,
 				647D6731245E198C00442029 /* NotificationLocalSource.swift */,
+				647D6743245E7F3800442029 /* RoomLocalSource.swift */,
+				647D674D245E8BDB00442029 /* NetworkingCategoryLocalSource.swift */,
 			);
 			path = Local;
 			sourceTree = "<group>";
@@ -267,6 +292,8 @@
 				647D670D245D1EC400442029 /* FieldCell.swift */,
 				647D6735245E38E500442029 /* NotificationGroupCell.swift */,
 				647D6737245E3F7000442029 /* NotificationCell.swift */,
+				647D6747245E869400442029 /* RoomCell.swift */,
+				647D6749245E86DD00442029 /* CategoryCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -342,6 +369,7 @@
 				647D6718245D479100442029 /* Notifications.storyboard in Resources */,
 				647D66CE245C82CD00442029 /* LaunchScreen.storyboard in Resources */,
 				647D66CB245C82CD00442029 /* Assets.xcassets in Resources */,
+				647D6740245E6D5400442029 /* Networking.storyboard in Resources */,
 				647D66DB245C870100442029 /* EventHome.storyboard in Resources */,
 				647D6716245D463D00442029 /* GeneralProfile.storyboard in Resources */,
 				647D66C9245C82CC00442029 /* Main.storyboard in Resources */,
@@ -355,6 +383,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				647D6746245E807900442029 /* RoomRepository.swift in Sources */,
+				647D674E245E8BDB00442029 /* NetworkingCategoryLocalSource.swift in Sources */,
 				647D66E7245CD09E00442029 /* RoomType.swift in Sources */,
 				647D66F0245CD76B00442029 /* RealTimeTool.swift in Sources */,
 				647D66F4245CD90600442029 /* UserType.swift in Sources */,
@@ -362,8 +392,11 @@
 				647D66FF245CDE1600442029 /* FieldRepository.swift in Sources */,
 				647D672C245E0AC900442029 /* RoundedButton.swift in Sources */,
 				647D66C6245C82CC00442029 /* ViewController.swift in Sources */,
+				647D6750245E8DC700442029 /* NetworkingCategoryRepository.swift in Sources */,
 				647D670B245D124C00442029 /* EventOnBoardingViewController.swift in Sources */,
 				647D66E3245CB99E00442029 /* SocialMedia.swift in Sources */,
+				647D6748245E869400442029 /* RoomCell.swift in Sources */,
+				647D6744245E7F3800442029 /* RoomLocalSource.swift in Sources */,
 				647D6732245E198C00442029 /* NotificationLocalSource.swift in Sources */,
 				647D66EE245CD68300442029 /* Talk.swift in Sources */,
 				647D6705245D0AE600442029 /* LocalSource.swift in Sources */,
@@ -371,10 +404,13 @@
 				647D66DE245C8CC500442029 /* IntegrationManager.swift in Sources */,
 				647D66EA245CD36800442029 /* RealTimeType.swift in Sources */,
 				647D6736245E38E500442029 /* NotificationGroupCell.swift in Sources */,
+				647D6742245E7D1C00442029 /* NetworkingViewController.swift in Sources */,
 				647D66C2245C82CC00442029 /* AppDelegate.swift in Sources */,
+				647D674C245E8B9F00442029 /* NetworkingCategory.swift in Sources */,
 				647D6703245D0AC400442029 /* FieldLocalSource.swift in Sources */,
 				647D6727245DFA7800442029 /* EventHomeTableView.swift in Sources */,
 				647D6730245E18F400442029 /* EventNotification.swift in Sources */,
+				647D674A245E86DD00442029 /* CategoryCell.swift in Sources */,
 				647D672E245E18B700442029 /* NotificationTableView.swift in Sources */,
 				647D66FD245CDD7A00442029 /* Repository.swift in Sources */,
 				647D6738245E3F7000442029 /* NotificationCell.swift in Sources */,
@@ -529,6 +565,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = UDGF2JUP82;
 				INFOPLIST_FILE = megahack/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -548,6 +585,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = UDGF2JUP82;
 				INFOPLIST_FILE = megahack/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

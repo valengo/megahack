@@ -11,7 +11,7 @@
         <!--Profile View Controller-->
         <scene sceneID="Joo-8O-h2w">
             <objects>
-                <viewController id="QjH-II-onC" customClass="ProfileViewController" customModule="megahack" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QjH-II-onC" customClass="ProfileViewController" customModule="Pina" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MfM-DM-61s">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,7 +37,7 @@
                                                                 <constraint firstAttribute="height" constant="120" id="5EO-M9-uVu"/>
                                                             </constraints>
                                                         </view>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VWd-h6-Ejb" customClass="RoundedBorderView" customModule="megahack" customModuleProvider="target">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VWd-h6-Ejb" customClass="RoundedBorderView" customModule="Pina" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="120" width="414" height="300.5"/>
                                                             <color key="backgroundColor" name="MainBackground"/>
                                                             <userDefinedRuntimeAttributes>
@@ -167,6 +167,27 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExperienceCell" id="Yqq-XC-Ebn">
+                                        <rect key="frame" x="0.0" y="602" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yqq-XC-Ebn" id="faz-gv-j55">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Experiência" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYP-4P-UBU">
+                                                    <rect key="frame" x="30" y="25" width="354" height="18"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                                    <color key="textColor" name="Text"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="BYP-4P-UBU" secondAttribute="trailing" constant="30" id="DAG-He-S7b"/>
+                                                <constraint firstItem="BYP-4P-UBU" firstAttribute="leading" secondItem="faz-gv-j55" secondAttribute="leading" constant="30" id="MeV-P0-8ZK"/>
+                                                <constraint firstItem="BYP-4P-UBU" firstAttribute="top" secondItem="faz-gv-j55" secondAttribute="top" constant="25" id="UuN-XA-APm"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
@@ -222,7 +243,7 @@
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="ProfileText">
-            <color red="0.4392156862745098" green="0.43529411764705883" blue="0.49411764705882355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.43900001049041748" green="0.43500000238418579" blue="0.49399998784065247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Text">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
