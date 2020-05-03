@@ -94,7 +94,14 @@ extension NetworkingViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if viewModel.isRoom(at: indexPath.row) {
-            // TODO open twilio call here
+            let targetStoryboard =  UIStoryboard(name: "Twilio", bundle: nil)
+            let vc = targetStoryboard.instantiateViewController(withIdentifier: "TwilioVideo")
+                    
+            if let vc = vc as? TwilioViewController {
+                vc.modalPresentationStyle = .fullScreen
+                present(vc, animated: true, completion: nil)
+            }
+            
         }
     }
     
