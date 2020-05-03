@@ -54,12 +54,18 @@ class EventHomeTableView: UITableViewController {
                 
         let reuseIdentifier = reuseIdentifiers[indexPath.row]
         
-        if (reuseIdentifier  == "FeaturingNowCard") {
+        if (reuseIdentifier == "") {
+            IntegrationManager.shared.open(url: "https://youtu.be/cQ8Kjgj3ck4")
+        }
+        else if (reuseIdentifier  == "FeaturingNowCard") {
             present(storyboardName: "EventHome", controllerName: "TalkViewController")
         } else if reuseIdentifier == "NetworkFeatureCard" {
             present(storyboardName: "Networking", controllerName: "NetworkingViewController")
         } else if reuseIdentifier == "SponsorsFeatureCard" {
             present(storyboardName: "Sponsors", controllerName: "SponsorViewController")
+        } else if reuseIdentifier == "ScheduleFeatureCard" {
+            let alert = AlertBuilder.shared.build(with: "Cronograma", and: "Aqui você poderá conferir todo o cronograma do evento!")
+            present(alert, animated: true, completion: nil)
         }
     }
 
