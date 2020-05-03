@@ -235,7 +235,7 @@
     <resources>
         <image name="Behance" width="460" height="460"/>
         <image name="Dribble" width="490" height="490"/>
-        <image name="Joseph" width="160" height="160"/>
+        <image name="Joseph" width="800" height="800"/>
         <image name="Linkedin" width="500" height="500"/>
         <image name="Whatsapp" width="500" height="500"/>
         <image name="person" catalog="system" width="128" height="117"/>

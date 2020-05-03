@@ -244,7 +244,7 @@
     </scenes>
     <resources>
         <image name="Pencil" width="101" height="122"/>
-        <image name="Room1" width="60" height="60"/>
+        <image name="Room1" width="600" height="600"/>
         <namedColor name="CardBorder">
             <color red="0.62400001287460327" green="0.62400001287460327" blue="0.68599998950958252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
