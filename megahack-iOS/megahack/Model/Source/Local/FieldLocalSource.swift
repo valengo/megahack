@@ -14,9 +14,8 @@ class FieldLocalSource: LocalSource {
         
         let fieldNames = [
             "Marketing", "Experiência de Usuário", "Negócios",
-            "Desenvolvimento", "Empreendedorismo",
+            "Desenvolvimento", "Empreendedorismo", "Vendas",
             "Design de Produto", "Lógica de Programação",
-            "Vendas"
         ]
         
         for name in fieldNames {
