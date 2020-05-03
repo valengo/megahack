@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1ABF3F4C33EEB0B6C90906B5 /* Pods_megahack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FD19817F375AE93F41DD75 /* Pods_megahack.framework */; };
 		647D66C2245C82CC00442029 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D66C1245C82CC00442029 /* AppDelegate.swift */; };
 		647D66C4245C82CC00442029 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D66C3245C82CC00442029 /* SceneDelegate.swift */; };
 		647D66C6245C82CC00442029 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D66C5245C82CC00442029 /* ViewController.swift */; };
@@ -63,6 +64,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14FD19817F375AE93F41DD75 /* Pods_megahack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_megahack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D7C08D8E0ED4CCF6E0410F5 /* Pods-megahack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-megahack.release.xcconfig"; path = "Target Support Files/Pods-megahack/Pods-megahack.release.xcconfig"; sourceTree = "<group>"; };
 		647D66BE245C82CC00442029 /* Pina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		647D66C1245C82CC00442029 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		647D66C3245C82CC00442029 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +121,7 @@
 		6499A9E3245F26250041DFD6 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		6499A9E4245F26250041DFD6 /* ProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
 		6499A9E7245F2E480041DFD6 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		FD0CCDA680B8B7C0888B9015 /* Pods-megahack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-megahack.debug.xcconfig"; path = "Target Support Files/Pods-megahack/Pods-megahack.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ABF3F4C33EEB0B6C90906B5 /* Pods_megahack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +141,8 @@
 			children = (
 				647D66C0245C82CC00442029 /* megahack */,
 				647D66BF245C82CC00442029 /* Products */,
+				EA132BABA2A9EB0E5CCF2056 /* Pods */,
+				DAEF4CDA460C4BD08D0BA550 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -328,6 +335,24 @@
 			path = Custom;
 			sourceTree = "<group>";
 		};
+		DAEF4CDA460C4BD08D0BA550 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14FD19817F375AE93F41DD75 /* Pods_megahack.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA132BABA2A9EB0E5CCF2056 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD0CCDA680B8B7C0888B9015 /* Pods-megahack.debug.xcconfig */,
+				2D7C08D8E0ED4CCF6E0410F5 /* Pods-megahack.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -335,9 +360,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 647D66D2245C82CD00442029 /* Build configuration list for PBXNativeTarget "megahack" */;
 			buildPhases = (
+				4AF71BDF02163818D3D00C5D /* [CP] Check Pods Manifest.lock */,
 				647D66BA245C82CC00442029 /* Sources */,
 				647D66BB245C82CC00442029 /* Frameworks */,
 				647D66BC245C82CC00442029 /* Resources */,
+				808C71012DC619FD675227A5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -401,6 +428,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4AF71BDF02163818D3D00C5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-megahack-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		808C71012DC619FD675227A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-megahack/Pods-megahack-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-megahack/Pods-megahack-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-megahack/Pods-megahack-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		647D66BA245C82CC00442029 /* Sources */ = {
@@ -590,6 +659,7 @@
 		};
 		647D66D3245C82CD00442029 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD0CCDA680B8B7C0888B9015 /* Pods-megahack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -610,6 +680,7 @@
 		};
 		647D66D4245C82CD00442029 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D7C08D8E0ED4CCF6E0410F5 /* Pods-megahack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
