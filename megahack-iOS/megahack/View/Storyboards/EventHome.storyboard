@@ -603,13 +603,223 @@ programação!</string>
             </objects>
             <point key="canvasLocation" x="1526" y="33"/>
         </scene>
+        <!--Talk View Controller-->
+        <scene sceneID="Yim-na-aHI">
+            <objects>
+                <viewController storyboardIdentifier="TalkViewController" id="7G8-Xa-HTU" customClass="TalkViewController" customModule="Pina" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rfT-gN-1fc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="n6P-7z-50A">
+                                <rect key="frame" x="30" y="64" width="354" height="80"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TD2-uO-cWa">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="50"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.left" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="dya-a9-R0J">
+                                                <rect key="frame" x="0.0" y="2.5" width="24" height="19"/>
+                                                <color key="tintColor" name="LightRed"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="dya-a9-R0J" secondAttribute="height" multiplier="1:1" id="a7F-iV-9QY"/>
+                                                    <constraint firstAttribute="width" constant="24" id="rVV-eN-7ll"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="MainBackground"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstItem="dya-a9-R0J" firstAttribute="leading" secondItem="TD2-uO-cWa" secondAttribute="leading" id="DRZ-jl-cKL"/>
+                                            <constraint firstAttribute="height" constant="50" id="huu-On-mha"/>
+                                            <constraint firstItem="dya-a9-R0J" firstAttribute="top" secondItem="TD2-uO-cWa" secondAttribute="top" id="syP-Kp-lVE"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="EGf-aO-6Yz" appends="YES" id="jk0-H7-spH"/>
+                                        </connections>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pitch da equipe 8!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ffl-MM-KPs">
+                                        <rect key="frame" x="0.0" y="50" width="354" height="30"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="25"/>
+                                        <color key="textColor" name="Text"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fJA-ds-dAB">
+                                <rect key="frame" x="0.0" y="164" width="414" height="698"/>
+                                <color key="backgroundColor" name="MainBackground"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TalkDescriptionCell" id="d7y-Qe-cag">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="202.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="d7y-Qe-cag" id="rIU-ww-MNU">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="202.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NTQ-aO-p5k">
+                                                    <rect key="frame" x="30" y="20" width="354" height="182.5"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" tag="30" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xfm-T3-8Iq">
+                                                            <rect key="frame" x="0.0" y="0.0" width="354" height="182.5"/>
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YgV-iY-Bd8">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="354" height="20"/>
+                                                                    <subviews>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ne7-89-eh6">
+                                                                            <rect key="frame" x="0.0" y="0.5" width="24" height="19"/>
+                                                                            <color key="tintColor" name="EventText"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="24" id="Yky-A9-A31"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14:00-16:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJd-3m-f1r">
+                                                                            <rect key="frame" x="34" y="0.0" width="320" height="20"/>
+                                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                                            <color key="textColor" name="EventText"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pQZ-Fi-TaZ">
+                                                                    <rect key="frame" x="0.0" y="30" width="354" height="20"/>
+                                                                    <subviews>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pin" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lLc-aZ-KEK">
+                                                                            <rect key="frame" x="0.0" y="-0.5" width="24" height="21.5"/>
+                                                                            <color key="tintColor" name="EventText"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="24" id="4Cx-Zl-Kbu"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pina" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYi-lq-Cjf">
+                                                                            <rect key="frame" x="34" y="0.0" width="320" height="20"/>
+                                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                                            <color key="textColor" name="EventText"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="249" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBZ-40-b54">
+                                                                    <rect key="frame" x="0.0" y="60" width="354" height="122.5"/>
+                                                                    <string key="text">Neste pitch vocês poderão conhecer o trabalho desenvolvido pela equipe 8 ao longo do Mega Hack, para resolver o desafio proposto pela PEGN e Época Negócios. A equipe apresenta o Pina, um app que amplia e facilita o networking entre pessoas e entre empresas e pessoas em eventos online. Vale a pena conferir!</string>
+                                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                                    <color key="textColor" name="EventText"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" name="MainBackground"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="xfm-T3-8Iq" secondAttribute="trailing" id="FdH-AS-uP7"/>
+                                                        <constraint firstAttribute="bottom" secondItem="xfm-T3-8Iq" secondAttribute="bottom" id="WcD-qh-lW8"/>
+                                                        <constraint firstItem="xfm-T3-8Iq" firstAttribute="top" secondItem="NTQ-aO-p5k" secondAttribute="top" id="ag6-FQ-QBO"/>
+                                                        <constraint firstItem="xfm-T3-8Iq" firstAttribute="leading" secondItem="NTQ-aO-p5k" secondAttribute="leading" id="u7Y-gJ-eXQ"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="NTQ-aO-p5k" secondAttribute="trailing" constant="30" id="HIx-5F-wRe"/>
+                                                <constraint firstAttribute="bottom" secondItem="NTQ-aO-p5k" secondAttribute="bottom" id="UqO-Oh-Wa5"/>
+                                                <constraint firstItem="NTQ-aO-p5k" firstAttribute="leading" secondItem="rIU-ww-MNU" secondAttribute="leading" constant="30" id="Wyq-mo-Lnq"/>
+                                                <constraint firstItem="NTQ-aO-p5k" firstAttribute="top" secondItem="rIU-ww-MNU" secondAttribute="top" constant="20" id="km8-5s-r3U"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="MainBackground"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RealtimeCell" id="aGR-sk-YvL">
+                                        <rect key="frame" x="0.0" y="230.5" width="414" height="118.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aGR-sk-YvL" id="ToD-Mg-XMn">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="118.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dlf-6r-ero">
+                                                    <rect key="frame" x="30" y="25" width="354" height="93.5"/>
+                                                    <color key="backgroundColor" name="MainBackground"/>
+                                                </view>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hL6-8u-u8z">
+                                                    <rect key="frame" x="30" y="25" width="354" height="93.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ferramentas" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XJg-Cg-awk">
+                                                            <rect key="frame" x="0.0" y="0.0" width="354" height="18"/>
+                                                            <color key="backgroundColor" name="MainBackground"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                                                            <color key="textColor" name="Text"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GkD-ZN-irH">
+                                                            <rect key="frame" x="0.0" y="24.5" width="354" height="69"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mentimeter" translatesAutoresizingMaskIntoConstraints="NO" id="B8m-jb-zG1">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="69" height="69"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="69" id="lCU-0r-K4o"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" name="MainBackground"/>
+                                                            <constraints>
+                                                                <constraint firstItem="B8m-jb-zG1" firstAttribute="leading" secondItem="GkD-ZN-irH" secondAttribute="leading" id="7Zv-5U-MPu"/>
+                                                                <constraint firstAttribute="height" constant="69" id="Cgm-C2-ajA"/>
+                                                                <constraint firstAttribute="bottom" secondItem="B8m-jb-zG1" secondAttribute="bottom" id="E2U-nx-5KG"/>
+                                                                <constraint firstItem="B8m-jb-zG1" firstAttribute="top" secondItem="GkD-ZN-irH" secondAttribute="top" id="qNn-SN-Dno"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" name="MainBackground"/>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" name="MainBackground"/>
+                                            <constraints>
+                                                <constraint firstItem="dlf-6r-ero" firstAttribute="leading" secondItem="ToD-Mg-XMn" secondAttribute="leading" constant="30" id="7YC-UB-zc9"/>
+                                                <constraint firstAttribute="bottom" secondItem="hL6-8u-u8z" secondAttribute="bottom" id="Bhp-Dp-z4q"/>
+                                                <constraint firstAttribute="trailing" secondItem="dlf-6r-ero" secondAttribute="trailing" constant="30" id="OVR-vh-twi"/>
+                                                <constraint firstItem="hL6-8u-u8z" firstAttribute="leading" secondItem="ToD-Mg-XMn" secondAttribute="leading" constant="30" id="TuA-j8-Ako"/>
+                                                <constraint firstItem="dlf-6r-ero" firstAttribute="top" secondItem="ToD-Mg-XMn" secondAttribute="top" constant="25" id="bzO-YG-r8S"/>
+                                                <constraint firstAttribute="bottom" secondItem="dlf-6r-ero" secondAttribute="bottom" id="fWI-gC-ZQW"/>
+                                                <constraint firstItem="hL6-8u-u8z" firstAttribute="top" secondItem="ToD-Mg-XMn" secondAttribute="top" constant="25" id="mKg-kr-vBC"/>
+                                                <constraint firstAttribute="trailing" secondItem="hL6-8u-u8z" secondAttribute="trailing" constant="30" id="rgp-j2-Fjp"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" name="MainBackground"/>
+                        <constraints>
+                            <constraint firstItem="xnf-8h-Rbc" firstAttribute="bottom" secondItem="fJA-ds-dAB" secondAttribute="bottom" id="DQU-3O-f7G"/>
+                            <constraint firstItem="fJA-ds-dAB" firstAttribute="top" secondItem="n6P-7z-50A" secondAttribute="bottom" constant="20" id="G1F-jn-4dL"/>
+                            <constraint firstItem="n6P-7z-50A" firstAttribute="leading" secondItem="xnf-8h-Rbc" secondAttribute="leading" constant="30" id="ImI-FI-8u6"/>
+                            <constraint firstItem="n6P-7z-50A" firstAttribute="top" secondItem="xnf-8h-Rbc" secondAttribute="top" constant="20" id="MyA-zQ-aJ4"/>
+                            <constraint firstItem="fJA-ds-dAB" firstAttribute="leading" secondItem="xnf-8h-Rbc" secondAttribute="leading" id="XAh-X1-Uwl"/>
+                            <constraint firstItem="xnf-8h-Rbc" firstAttribute="trailing" secondItem="n6P-7z-50A" secondAttribute="trailing" constant="30" id="Z12-8s-pgW"/>
+                            <constraint firstItem="xnf-8h-Rbc" firstAttribute="trailing" secondItem="fJA-ds-dAB" secondAttribute="trailing" id="xgs-Yi-7fx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xnf-8h-Rbc"/>
+                    </view>
+                    <connections>
+                        <outlet property="talkTable" destination="fJA-ds-dAB" id="vSK-UJ-QiP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dhk-q1-jZy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="EGf-aO-6Yz">
+                    <connections>
+                        <action selector="dismmiss" destination="7G8-Xa-HTU" id="l0M-sY-wtc"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2242" y="33"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Calendar" width="555" height="427"/>
         <image name="Guy" width="705" height="635"/>
         <image name="MegaHack" width="1125" height="957"/>
+        <image name="Mentimeter" width="690" height="690"/>
         <image name="Sponsors" width="395" height="370"/>
+        <image name="arrow.left" catalog="system" width="128" height="98"/>
         <image name="calendar" catalog="system" width="128" height="106"/>
+        <image name="clock" catalog="system" width="128" height="121"/>
         <image name="house" catalog="system" width="128" height="110"/>
         <image name="pin" catalog="system" width="119" height="128"/>
         <image name="video" catalog="system" width="128" height="83"/>

@@ -22,7 +22,14 @@ class EventHomeTableView: UITableViewController {
     }
     
     private func present(storyboardName: String, controllerName: String) {
-        present(UIStoryboard(name: storyboardName, bundle: nil).instantiateViewController(withIdentifier: controllerName) as UIViewController, animated: true, completion: nil)
+        let targetStoryboard =  UIStoryboard(name: storyboardName, bundle: nil)
+        let vc = targetStoryboard.instantiateViewController(withIdentifier: controllerName)
+        
+//        if let vc = vc as? TalkViewController {
+//            vc.modalPresentationStyle = .fullScreen
+//        }
+        
+        present(vc, animated: true, completion: nil)
             
     }
 
@@ -47,7 +54,9 @@ class EventHomeTableView: UITableViewController {
                 
         let reuseIdentifier = reuseIdentifiers[indexPath.row]
         
-        if reuseIdentifier == "NetworkFeatureCard" {
+        if (reuseIdentifier  == "FeaturingNowCard") {
+            present(storyboardName: "EventHome", controllerName: "TalkViewController")
+        } else if reuseIdentifier == "NetworkFeatureCard" {
             present(storyboardName: "Networking", controllerName: "NetworkingViewController")
         } else if reuseIdentifier == "SponsorsFeatureCard" {
             present(storyboardName: "Sponsors", controllerName: "SponsorViewController")

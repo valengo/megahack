@@ -55,6 +55,8 @@
 		647D6750245E8DC700442029 /* NetworkingCategoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D674F245E8DC700442029 /* NetworkingCategoryRepository.swift */; };
 		647D6752245E91C800442029 /* Sponsors.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 647D6751245E91C800442029 /* Sponsors.storyboard */; };
 		647D6754245E94FF00442029 /* SponsorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D6753245E94FF00442029 /* SponsorViewController.swift */; };
+		6499A9E0245F08470041DFD6 /* TalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6499A9DF245F08470041DFD6 /* TalkViewController.swift */; };
+		6499A9E2245F250B0041DFD6 /* Twilio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6499A9E1245F250B0041DFD6 /* Twilio.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,6 +110,8 @@
 		647D674F245E8DC700442029 /* NetworkingCategoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingCategoryRepository.swift; sourceTree = "<group>"; };
 		647D6751245E91C800442029 /* Sponsors.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sponsors.storyboard; sourceTree = "<group>"; };
 		647D6753245E94FF00442029 /* SponsorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorViewController.swift; sourceTree = "<group>"; };
+		6499A9DF245F08470041DFD6 /* TalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkViewController.swift; sourceTree = "<group>"; };
+		6499A9E1245F250B0041DFD6 /* Twilio.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Twilio.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +165,7 @@
 				647D673D245E4AE600442029 /* ProfileViewController.swift */,
 				647D6741245E7D1C00442029 /* NetworkingViewController.swift */,
 				647D6753245E94FF00442029 /* SponsorViewController.swift */,
+				6499A9DF245F08470041DFD6 /* TalkViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -196,6 +201,7 @@
 				647D6717245D479100442029 /* Notifications.storyboard */,
 				647D673F245E6D5400442029 /* Networking.storyboard */,
 				647D6751245E91C800442029 /* Sponsors.storyboard */,
+				6499A9E1245F250B0041DFD6 /* Twilio.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -375,6 +381,7 @@
 				647D6718245D479100442029 /* Notifications.storyboard in Resources */,
 				647D66CE245C82CD00442029 /* LaunchScreen.storyboard in Resources */,
 				647D66CB245C82CD00442029 /* Assets.xcassets in Resources */,
+				6499A9E2245F250B0041DFD6 /* Twilio.storyboard in Resources */,
 				647D6740245E6D5400442029 /* Networking.storyboard in Resources */,
 				647D66DB245C870100442029 /* EventHome.storyboard in Resources */,
 				647D6752245E91C800442029 /* Sponsors.storyboard in Resources */,
@@ -404,6 +411,7 @@
 				647D66E3245CB99E00442029 /* SocialMedia.swift in Sources */,
 				647D6748245E869400442029 /* RoomCell.swift in Sources */,
 				647D6744245E7F3800442029 /* RoomLocalSource.swift in Sources */,
+				6499A9E0245F08470041DFD6 /* TalkViewController.swift in Sources */,
 				647D6732245E198C00442029 /* NotificationLocalSource.swift in Sources */,
 				647D66EE245CD68300442029 /* Talk.swift in Sources */,
 				647D6705245D0AE600442029 /* LocalSource.swift in Sources */,

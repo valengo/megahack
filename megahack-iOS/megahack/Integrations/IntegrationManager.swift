@@ -6,13 +6,23 @@
 //  Copyright © 2020 Andressa Valengo. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class IntegrationManager {
     
     public static let shared = IntegrationManager()
     
     private init() {}
+    
+    func open(url: String, for tool: RealTimeType) {
+        open(url: url)
+    }
+    
+    func open(url: String) {
+        if let url = URL(string: url) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+    }
 }
 
 
