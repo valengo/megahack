@@ -16,15 +16,15 @@ class RoomRepository: Repository {
         self.localSource = source
     }
     
-    func get(identifier: Int) -> Room? {
+    func get(identifier: Int) -> EventRoom? {
         return nil
     }
     
-    func add(item: Room) -> Bool {
+    func add(item: EventRoom) -> Bool {
         return false
     }
     
-    func getAll() -> [Room] {
+    func getAll() -> [EventRoom] {
         return localSource.getAll()
     }
 }

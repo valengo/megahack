@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Room {
+struct EventRoom {
     let id: Int
     let type: RoomType
     let url: String

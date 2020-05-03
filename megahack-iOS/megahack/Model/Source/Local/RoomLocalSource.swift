@@ -10,25 +10,25 @@ import Foundation
 
 class RoomLocalSource: LocalSource {
     
-    private var rooms: [Room] = []
+    private var rooms: [EventRoom] = []
     
     init() {
-        add(item: Room(id: 1, type: .twilio, url: "",
+        add(item: EventRoom(id: 1, type: .twilio, url: "",
                        description: "Converse com nosso palestrante",
                        imageName: "Room1"))
-        add(item: Room(id: 1, type: .twilio, url: "",
+        add(item: EventRoom(id: 1, type: .twilio, url: "",
                        description: "Saiba mais sobre a PEGN",
                        imageName: "Room2"))
-        add(item: Room(id: 1, type: .twilio, url: "",
+        add(item: EventRoom(id: 1, type: .twilio, url: "",
                        description: "Tire suas dúvidas!",
                        imageName: "Room3"))
     }
     
-    func getAll() -> [Room] {
+    func getAll() -> [EventRoom] {
         return rooms
     }
     
-    func add(item: Room) {
+    func add(item: EventRoom) {
         rooms.append(item)
     }
 }
