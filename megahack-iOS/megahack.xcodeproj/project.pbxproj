@@ -57,6 +57,8 @@
 		647D6754245E94FF00442029 /* SponsorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D6753245E94FF00442029 /* SponsorViewController.swift */; };
 		6499A9E0245F08470041DFD6 /* TalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6499A9DF245F08470041DFD6 /* TalkViewController.swift */; };
 		6499A9E2245F250B0041DFD6 /* Twilio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6499A9E1245F250B0041DFD6 /* Twilio.storyboard */; };
+		6499A9E5245F26250041DFD6 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6499A9E3245F26250041DFD6 /* ProfileCell.swift */; };
+		6499A9E6245F26250041DFD6 /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6499A9E4245F26250041DFD6 /* ProfileCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +114,8 @@
 		647D6753245E94FF00442029 /* SponsorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorViewController.swift; sourceTree = "<group>"; };
 		6499A9DF245F08470041DFD6 /* TalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkViewController.swift; sourceTree = "<group>"; };
 		6499A9E1245F250B0041DFD6 /* Twilio.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Twilio.storyboard; sourceTree = "<group>"; };
+		6499A9E3245F26250041DFD6 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		6499A9E4245F26250041DFD6 /* ProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -306,6 +310,8 @@
 				647D6737245E3F7000442029 /* NotificationCell.swift */,
 				647D6747245E869400442029 /* RoomCell.swift */,
 				647D6749245E86DD00442029 /* CategoryCell.swift */,
+				6499A9E3245F26250041DFD6 /* ProfileCell.swift */,
+				6499A9E4245F26250041DFD6 /* ProfileCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -381,6 +387,7 @@
 				647D6718245D479100442029 /* Notifications.storyboard in Resources */,
 				647D66CE245C82CD00442029 /* LaunchScreen.storyboard in Resources */,
 				647D66CB245C82CD00442029 /* Assets.xcassets in Resources */,
+				6499A9E6245F26250041DFD6 /* ProfileCell.xib in Resources */,
 				6499A9E2245F250B0041DFD6 /* Twilio.storyboard in Resources */,
 				647D6740245E6D5400442029 /* Networking.storyboard in Resources */,
 				647D66DB245C870100442029 /* EventHome.storyboard in Resources */,
@@ -400,6 +407,7 @@
 				647D6746245E807900442029 /* RoomRepository.swift in Sources */,
 				647D674E245E8BDB00442029 /* NetworkingCategoryLocalSource.swift in Sources */,
 				647D66E7245CD09E00442029 /* RoomType.swift in Sources */,
+				6499A9E5245F26250041DFD6 /* ProfileCell.swift in Sources */,
 				647D66F0245CD76B00442029 /* RealTimeTool.swift in Sources */,
 				647D66F4245CD90600442029 /* UserType.swift in Sources */,
 				647D66F2245CD87A00442029 /* Room.swift in Sources */,
