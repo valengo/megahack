@@ -63,22 +63,22 @@ class TwilioViewController: UIViewController, RoomDelegate, LocalParticipantDele
     }
     
     func setUpVideo() {
-//        guard let frontCamera = CameraSource.captureDevice(position: .front) else { return }
-//
-//        if let camera = CameraSource(delegate: self) {
-//            localVideoTrack = LocalVideoTrack(source: camera)
-//
-//            localView = VideoView(frame: self.localViewContainer.bounds)
-//            localView.backgroundColor = .black
-//            localView.contentMode = .scaleAspectFill
-//
-//            localVideoTrack?.addRenderer(localView)
-//            self.camera = camera
-//            self.localViewContainer.addSubview(localView)
-//
-//            camera.startCapture(device: frontCamera)
+        guard let frontCamera = CameraSource.captureDevice(position: .front) else { return }
+
+        if let camera = CameraSource(delegate: self) {
+            localVideoTrack = LocalVideoTrack(source: camera)
+
+            localView = VideoView(frame: self.localViewContainer.bounds)
+            localView.backgroundColor = .black
+            localView.contentMode = .scaleAspectFill
+
+            localVideoTrack?.addRenderer(localView)
+            self.camera = camera
+            self.localViewContainer.addSubview(localView)
+
+            camera.startCapture(device: frontCamera)
             self.createARoom()
-//        }
+        }
     }
 
     func createARoom() {
