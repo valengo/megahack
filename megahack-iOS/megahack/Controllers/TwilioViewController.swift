@@ -16,11 +16,18 @@ class TwilioViewController: UIViewController, RoomDelegate, LocalParticipantDele
     
     var hasAccess: Bool = false {
         didSet {
-            if (hasAccess) {
+            if (hasAccess && agreed) {
                 self.setUpVideo()
             }
         }
     }
+    var agreed: Bool = false {
+           didSet {
+               if (hasAccess && agreed) {
+                   self.setUpVideo()
+               }
+           }
+       }
     
     var room: Room?
     
@@ -60,6 +67,15 @@ class TwilioViewController: UIViewController, RoomDelegate, LocalParticipantDele
                 self.hasAccess = true
             }
         }.resume()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let alert = AlertBuilder.shared.buildCancelable(with: "Chamada de Vídeo", and: "Você está prestes a entrar uma chamada por vídeo. Ao continuar, outros poderão ver e ouvir você.", okAction: UIAlertAction(title: "Entendi", style: UIAlertAction.Style.default, handler: { action in
+            self.agreed = true
+        }))
+        self.present(alert, animated: true)
     }
     
     func setUpVideo() {
