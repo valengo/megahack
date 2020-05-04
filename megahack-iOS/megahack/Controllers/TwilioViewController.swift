@@ -149,7 +149,12 @@ class TwilioViewController: UIViewController, RoomDelegate, LocalParticipantDele
         self.view.setNeedsLayout()
     }
 
-
+    @IBAction func finishCall(_ sender: Any) {
+        room?.disconnect()
+        camera?.stopCapture()
+        self.dismiss(animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 
