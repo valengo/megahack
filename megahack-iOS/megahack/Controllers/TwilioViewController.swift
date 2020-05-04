@@ -186,6 +186,9 @@ class TwilioViewController: UIViewController, RoomDelegate, LocalParticipantDele
 extension TwilioViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         guard let participants = room?.remoteParticipants.count else { return 0 }
+        if (participants < 3) {
+            self.localViewContainer.isHidden = false
+        }
         return participants > 2 ? participants + 1 : participants
     }
     
@@ -227,12 +230,15 @@ extension TwilioViewController: UICollectionViewDelegate {
 
 extension TwilioViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        guard let participants = room?.remoteParticipants.count else { return CGSize(width: 0, height: 0) }
-        let width = 414
-        let height = 896
+        guard var participants = room?.remoteParticipants.count else { return CGSize(width: 0, height: 0) }
+        let width = self.view.frame.width
+        let height = self.view.frame.height
         if (participants < 3) {
-            return CGSize(width: width, height: height/participants)
+            return CGSize(width: width, height: height/CGFloat(participants))
         }
-        return CGSize(width: width/2, height: height/(participants/2))
+        if (participants > 5) {
+            participants = 5
+        }
+        return CGSize(width: width/2, height: (height/CGFloat(participants)) * 2)
     }
 }
