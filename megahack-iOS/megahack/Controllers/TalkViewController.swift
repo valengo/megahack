@@ -78,7 +78,18 @@ extension TalkViewController: UITableViewDelegate {
         
         if viewModel.isUser(at: indexPath.row) {
             let user = viewModel.getUser(at: indexPath.row)
-            IntegrationManager.shared.open(url: user.social.url, for: user.social.type)
+            if user.social.type == .Whatsapp {
+                let action = UIAlertAction(title: "Continuar", style: .default,
+                                           handler: { (action) -> Void in
+                    IntegrationManager.shared.open(url: user.social.url, for: user.social.type)
+                })
+                let alert = AlertBuilder.shared.buildCancelable(with: "Whatsapp sandbox", and: "Esse contato utiliza uma versão de testes do Whatapp da API da Twilio. Deseja continuar?", okAction: action)
+                
+                present(alert, animated: true, completion: nil)
+                
+            } else {
+                IntegrationManager.shared.open(url: user.social.url, for: user.social.type)
+            }
         } else  {
             let identifier = reuseIdentifiers[indexPath.row]
                     

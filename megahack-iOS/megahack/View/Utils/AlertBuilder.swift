@@ -19,6 +19,17 @@ class AlertBuilder {
         alert.addAction(UIAlertAction(title: "Entendi", style: UIAlertAction.Style.default, handler: nil))
         return alert
     }
+    
+    func buildCancelable(with title: String, and message: String, okAction: UIAlertAction) -> UIAlertController {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+    
+        let cancelAction = UIAlertAction(title: "Cancelar", style: .cancel)
+        
+        alert.addAction(okAction)
+        alert.addAction(cancelAction)
+        
+        return alert
+    }
 }
 
 

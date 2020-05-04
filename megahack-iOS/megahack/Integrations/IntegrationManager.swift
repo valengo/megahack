@@ -18,10 +18,9 @@ class IntegrationManager {
         open(url: url)
     }
     
-    func open(url: String, for tool: SocialMediaType) {
+    func open(url: String, for media: SocialMediaType) {
         open(url: url)
     }
-    
     
     func open(url: String) {
         if let url = URL(string: url) {

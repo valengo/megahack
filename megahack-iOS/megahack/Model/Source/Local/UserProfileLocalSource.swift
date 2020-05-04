@@ -15,7 +15,7 @@ class UserProfileLocalSource: LocalSource {
         
         add(item: UserProfile(id: 6, name: "Pina", field: "Networking",
                               social: SocialMedia(id: 1, type: .Whatsapp,
-                              url: "whatsapp://send?phone=+14155238886"),
+                              url: "whatsapp://send?phone=+14155238886&text=join%20cut-consider"),
                               imageName: "Pina"))
         
         
