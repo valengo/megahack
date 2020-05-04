@@ -95,7 +95,10 @@ extension TalkViewController: UITableViewDelegate {
                     
             if identifier == "RealtimeCell" {
                 IntegrationManager.shared.open(url: "https://www.menti.com/9ntzy4vqio", for: .menti)
+            } else if identifier == "TalkDescriptionCell" {
+                IntegrationManager.shared.open(url: "https://youtu.be/IcdeH-_iV8Q")
             }
+            
         }
     }
 }
