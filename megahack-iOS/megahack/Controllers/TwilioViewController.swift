@@ -114,6 +114,9 @@ class TwilioViewController: UIViewController, RoomDelegate, LocalParticipantDele
         for remoteParticipant in room.remoteParticipants {
             remoteParticipant.delegate = self
         }
+        DispatchQueue.main.async {
+            self.remoteViewsCollection.reloadData()
+        }
     }
 
     func participantDidConnect(room: Room, participant: RemoteParticipant) {
