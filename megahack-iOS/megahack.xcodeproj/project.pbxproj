@@ -58,12 +58,14 @@
 		647D6750245E8DC700442029 /* NetworkingCategoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D674F245E8DC700442029 /* NetworkingCategoryRepository.swift */; };
 		647D6752245E91C800442029 /* Sponsors.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 647D6751245E91C800442029 /* Sponsors.storyboard */; };
 		647D6754245E94FF00442029 /* SponsorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D6753245E94FF00442029 /* SponsorViewController.swift */; };
+		648DFFE2245F672400B56A7F /* AlertBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648DFFE1245F672400B56A7F /* AlertBuilder.swift */; };
 		6499A9E0245F08470041DFD6 /* TalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6499A9DF245F08470041DFD6 /* TalkViewController.swift */; };
 		6499A9E2245F250B0041DFD6 /* Twilio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6499A9E1245F250B0041DFD6 /* Twilio.storyboard */; };
 		6499A9E5245F26250041DFD6 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6499A9E3245F26250041DFD6 /* ProfileCell.swift */; };
-		6499A9E6245F26250041DFD6 /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6499A9E4245F26250041DFD6 /* ProfileCell.xib */; };
 		6499A9E8245F2E480041DFD6 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6499A9E7245F2E480041DFD6 /* UserProfile.swift */; };
 		6499A9EA245F3B310041DFD6 /* UserProfileLocalSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6499A9E9245F3B310041DFD6 /* UserProfileLocalSource.swift */; };
+		6499A9EC245F3F200041DFD6 /* UserProfileRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6499A9EB245F3F200041DFD6 /* UserProfileRepository.swift */; };
+		6499A9EE245F58F80041DFD6 /* SuggestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6499A9ED245F58F80041DFD6 /* SuggestionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -121,12 +123,14 @@
 		647D674F245E8DC700442029 /* NetworkingCategoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingCategoryRepository.swift; sourceTree = "<group>"; };
 		647D6751245E91C800442029 /* Sponsors.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sponsors.storyboard; sourceTree = "<group>"; };
 		647D6753245E94FF00442029 /* SponsorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorViewController.swift; sourceTree = "<group>"; };
+		648DFFE1245F672400B56A7F /* AlertBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertBuilder.swift; sourceTree = "<group>"; };
 		6499A9DF245F08470041DFD6 /* TalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkViewController.swift; sourceTree = "<group>"; };
 		6499A9E1245F250B0041DFD6 /* Twilio.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Twilio.storyboard; sourceTree = "<group>"; };
 		6499A9E3245F26250041DFD6 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
-		6499A9E4245F26250041DFD6 /* ProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
 		6499A9E7245F2E480041DFD6 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		6499A9E9245F3B310041DFD6 /* UserProfileLocalSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileLocalSource.swift; sourceTree = "<group>"; };
+		6499A9EB245F3F200041DFD6 /* UserProfileRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileRepository.swift; sourceTree = "<group>"; };
+		6499A9ED245F58F80041DFD6 /* SuggestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionsViewController.swift; sourceTree = "<group>"; };
 		FD0CCDA680B8B7C0888B9015 /* Pods-megahack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-megahack.debug.xcconfig"; path = "Target Support Files/Pods-megahack/Pods-megahack.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -186,6 +190,7 @@
 				647D6753245E94FF00442029 /* SponsorViewController.swift */,
 				6499A9DF245F08470041DFD6 /* TalkViewController.swift */,
 				1FFFFB63245F33C700F1B776 /* TwilioViewController.swift */,
+				6499A9ED245F58F80041DFD6 /* SuggestionsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -193,6 +198,7 @@
 		647D66D6245C831D00442029 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				648DFFE0245F671100B56A7F /* Utils */,
 				647D6728245DFF8000442029 /* Custom */,
 				647D670C245D1EAA00442029 /* Cells */,
 				647D66D9245C833A00442029 /* Assets */,
@@ -279,6 +285,7 @@
 				647D6733245E1F7000442029 /* NotificationRepository.swift */,
 				647D6745245E807900442029 /* RoomRepository.swift */,
 				647D674F245E8DC700442029 /* NetworkingCategoryRepository.swift */,
+				6499A9EB245F3F200041DFD6 /* UserProfileRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -342,6 +349,14 @@
 				647D672B245E0AC900442029 /* RoundedButton.swift */,
 			);
 			path = Custom;
+			sourceTree = "<group>";
+		};
+		648DFFE0245F671100B56A7F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				648DFFE1245F672400B56A7F /* AlertBuilder.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		DAEF4CDA460C4BD08D0BA550 /* Frameworks */ = {
@@ -425,7 +440,6 @@
 				647D6718245D479100442029 /* Notifications.storyboard in Resources */,
 				647D66CE245C82CD00442029 /* LaunchScreen.storyboard in Resources */,
 				647D66CB245C82CD00442029 /* Assets.xcassets in Resources */,
-				6499A9E6245F26250041DFD6 /* ProfileCell.xib in Resources */,
 				6499A9E2245F250B0041DFD6 /* Twilio.storyboard in Resources */,
 				647D6740245E6D5400442029 /* Networking.storyboard in Resources */,
 				647D66DB245C870100442029 /* EventHome.storyboard in Resources */,
@@ -499,6 +513,7 @@
 				647D6750245E8DC700442029 /* NetworkingCategoryRepository.swift in Sources */,
 				6499A9EA245F3B310041DFD6 /* UserProfileLocalSource.swift in Sources */,
 				647D670B245D124C00442029 /* EventOnBoardingViewController.swift in Sources */,
+				6499A9EC245F3F200041DFD6 /* UserProfileRepository.swift in Sources */,
 				647D66E3245CB99E00442029 /* SocialMedia.swift in Sources */,
 				647D6748245E869400442029 /* RoomCell.swift in Sources */,
 				647D6744245E7F3800442029 /* RoomLocalSource.swift in Sources */,
@@ -506,7 +521,9 @@
 				647D6732245E198C00442029 /* NotificationLocalSource.swift in Sources */,
 				647D66EE245CD68300442029 /* Talk.swift in Sources */,
 				647D6705245D0AE600442029 /* LocalSource.swift in Sources */,
+				648DFFE2245F672400B56A7F /* AlertBuilder.swift in Sources */,
 				647D673E245E4AE600442029 /* ProfileViewController.swift in Sources */,
+				6499A9EE245F58F80041DFD6 /* SuggestionsViewController.swift in Sources */,
 				647D66DE245C8CC500442029 /* IntegrationManager.swift in Sources */,
 				647D66EA245CD36800442029 /* RealTimeType.swift in Sources */,
 				647D6736245E38E500442029 /* NotificationGroupCell.swift in Sources */,
@@ -674,8 +691,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = W9Y372X4WH;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = UDGF2JUP82;
 				INFOPLIST_FILE = megahack/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -695,8 +712,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = W9Y372X4WH;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = UDGF2JUP82;
 				INFOPLIST_FILE = megahack/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -255,14 +255,14 @@ Mega Hack 2020!</string>
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="n3v-ha-QIq">
-                                                                    <rect key="frame" x="0.0" y="26.5" width="178.5" height="50.5"/>
+                                                                    <rect key="frame" x="0.0" y="26.5" width="169.5" height="50.5"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pin" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wug-VW-ZGP">
                                                                             <rect key="frame" x="0.0" y="-0.5" width="20" height="52"/>
                                                                             <color key="tintColor" name="EventText"/>
                                                                         </imageView>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="youtube.com/124asdfj3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5D-dB-6pt">
-                                                                            <rect key="frame" x="30" y="0.0" width="148.5" height="50.5"/>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="youtu.be/cQ8Kjgj3ck4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5D-dB-6pt">
+                                                                            <rect key="frame" x="30" y="0.0" width="139.5" height="50.5"/>
                                                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                                             <color key="textColor" name="EventText"/>
                                                                             <nil key="highlightedColor"/>
@@ -283,6 +283,7 @@ Mega Hack 2020!</string>
                                             </constraints>
                                         </view>
                                     </subviews>
+                                    <color key="backgroundColor" name="MainBackground"/>
                                     <constraints>
                                         <constraint firstItem="rfv-BW-uRa" firstAttribute="top" secondItem="Tuz-Zu-Kae" secondAttribute="top" constant="20" id="0zR-dU-aad"/>
                                         <constraint firstItem="rfv-BW-uRa" firstAttribute="leading" secondItem="Tuz-Zu-Kae" secondAttribute="leading" constant="30" id="Yf4-sx-7p0"/>
@@ -717,6 +718,7 @@ programação!</string>
                                                     </constraints>
                                                 </view>
                                             </subviews>
+                                            <color key="backgroundColor" name="MainBackground"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="NTQ-aO-p5k" secondAttribute="trailing" constant="30" id="HIx-5F-wRe"/>
                                                 <constraint firstAttribute="bottom" secondItem="NTQ-aO-p5k" secondAttribute="bottom" id="UqO-Oh-Wa5"/>
@@ -781,6 +783,114 @@ programação!</string>
                                                 <constraint firstAttribute="trailing" secondItem="hL6-8u-u8z" secondAttribute="trailing" constant="30" id="rgp-j2-Fjp"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" name="MainBackground"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TalkersCell" id="atI-qn-2aC">
+                                        <rect key="frame" x="0.0" y="349" width="414" height="28"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="atI-qn-2aC" id="8wF-K5-1pj">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="28"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UgO-PR-wDm">
+                                                    <rect key="frame" x="30" y="10" width="354" height="18"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Palestrantes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9eZ-V7-vhm">
+                                                            <rect key="frame" x="0.0" y="0.0" width="354" height="18"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                                                            <color key="textColor" name="Text"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" name="MainBackground"/>
+                                                    <constraints>
+                                                        <constraint firstItem="9eZ-V7-vhm" firstAttribute="centerY" secondItem="UgO-PR-wDm" secondAttribute="centerY" id="MTo-6b-BXa"/>
+                                                        <constraint firstItem="9eZ-V7-vhm" firstAttribute="width" secondItem="UgO-PR-wDm" secondAttribute="width" id="P2n-5w-gLZ"/>
+                                                        <constraint firstItem="9eZ-V7-vhm" firstAttribute="centerX" secondItem="UgO-PR-wDm" secondAttribute="centerX" id="R69-Ih-Jw9"/>
+                                                        <constraint firstItem="9eZ-V7-vhm" firstAttribute="height" secondItem="UgO-PR-wDm" secondAttribute="height" id="RBQ-bW-Wxm"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" name="MainBackground"/>
+                                            <constraints>
+                                                <constraint firstItem="UgO-PR-wDm" firstAttribute="leading" secondItem="8wF-K5-1pj" secondAttribute="leading" constant="30" id="EFq-vJ-0ND"/>
+                                                <constraint firstAttribute="trailing" secondItem="UgO-PR-wDm" secondAttribute="trailing" constant="30" id="Zpr-M0-137"/>
+                                                <constraint firstItem="UgO-PR-wDm" firstAttribute="top" secondItem="8wF-K5-1pj" secondAttribute="top" constant="10" id="f06-oB-rWk"/>
+                                                <constraint firstAttribute="bottom" secondItem="UgO-PR-wDm" secondAttribute="bottom" id="k9P-FW-n2s"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="MainBackground"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileCell" id="VCf-mW-ApF" customClass="ProfileCell" customModule="Pina" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="377" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VCf-mW-ApF" id="lHx-yL-BYW">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="btE-rH-ryq">
+                                                    <rect key="frame" x="30" y="0.0" width="354" height="80"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3t7-E3-SWm">
+                                                            <rect key="frame" x="0.0" y="20" width="354" height="60"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="251" image="Vini" translatesAutoresizingMaskIntoConstraints="NO" id="Bco-y3-NU8">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="60" id="A6a-QW-nFa"/>
+                                                                        <constraint firstAttribute="width" constant="60" id="XkD-P7-0FJ"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" axis="vertical" distribution="fillEqually" spacing="-5" translatesAutoresizingMaskIntoConstraints="NO" id="Zgr-09-CmH">
+                                                                    <rect key="frame" x="80" y="0.0" width="224" height="60"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csb-Ik-FKn">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="224" height="32.5"/>
+                                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                                                                            <color key="textColor" name="Text"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Designer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmf-Mo-M5J">
+                                                                            <rect key="frame" x="0.0" y="27.5" width="224" height="32.5"/>
+                                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                                            <color key="textColor" name="ProfileText"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="251" image="Linkedin" translatesAutoresizingMaskIntoConstraints="NO" id="EBu-Vg-dOZ">
+                                                                    <rect key="frame" x="324" y="0.0" width="30" height="60"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="30" id="uMz-ba-rAV"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" name="MainBackground"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="3t7-E3-SWm" secondAttribute="bottom" id="Jhw-2S-L5C"/>
+                                                        <constraint firstItem="3t7-E3-SWm" firstAttribute="top" secondItem="btE-rH-ryq" secondAttribute="top" constant="20" id="Rm4-OP-A6W"/>
+                                                        <constraint firstItem="3t7-E3-SWm" firstAttribute="leading" secondItem="btE-rH-ryq" secondAttribute="leading" id="h49-Xj-r3D"/>
+                                                        <constraint firstAttribute="trailing" secondItem="3t7-E3-SWm" secondAttribute="trailing" id="ppl-gM-18u"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" name="MainBackground"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="btE-rH-ryq" secondAttribute="bottom" id="JRh-b3-1lm"/>
+                                                <constraint firstItem="btE-rH-ryq" firstAttribute="leading" secondItem="lHx-yL-BYW" secondAttribute="leading" constant="30" id="hxO-gC-cxl"/>
+                                                <constraint firstAttribute="trailing" secondItem="btE-rH-ryq" secondAttribute="trailing" constant="30" id="rBJ-OV-rwP"/>
+                                                <constraint firstItem="btE-rH-ryq" firstAttribute="top" secondItem="lHx-yL-BYW" secondAttribute="top" id="uI1-Qk-rAh"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="MainBackground"/>
+                                        <connections>
+                                            <outlet property="fieldLabel" destination="hmf-Mo-M5J" id="YYu-4B-sKE"/>
+                                            <outlet property="nameLabel" destination="csb-Ik-FKn" id="JSm-Oq-d5D"/>
+                                            <outlet property="profilePic" destination="Bco-y3-NU8" id="SHx-hb-5j5"/>
+                                            <outlet property="socialMediaPic" destination="EBu-Vg-dOZ" id="b6m-r7-Ip3"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -814,9 +924,11 @@ programação!</string>
     <resources>
         <image name="Calendar" width="555" height="427"/>
         <image name="Guy" width="705" height="635"/>
+        <image name="Linkedin" width="500" height="500"/>
         <image name="MegaHack" width="1125" height="957"/>
         <image name="Mentimeter" width="690" height="690"/>
         <image name="Sponsors" width="395" height="370"/>
+        <image name="Vini" width="1012" height="1012"/>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
         <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="clock" catalog="system" width="128" height="121"/>
@@ -846,6 +958,9 @@ programação!</string>
         </namedColor>
         <namedColor name="MainBackground">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ProfileText">
+            <color red="0.43900001049041748" green="0.43500000238418579" blue="0.49399998784065247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Text">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

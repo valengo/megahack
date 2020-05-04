@@ -75,6 +75,7 @@
                                                 <constraint firstItem="a3J-ML-3Iw" firstAttribute="centerX" secondItem="3RF-Jh-kCw" secondAttribute="centerX" id="uaz-Nb-RH0"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" name="MainBackground"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SponsorAboutCell" id="cmK-bw-b7V">
                                         <rect key="frame" x="0.0" y="288" width="414" height="101"/>
@@ -152,6 +153,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                             </subviews>
+                                            <color key="backgroundColor" name="MainBackground"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="fzf-nr-H4H" secondAttribute="trailing" constant="20" id="CaY-R8-ctp"/>
                                                 <constraint firstItem="fzf-nr-H4H" firstAttribute="leading" secondItem="yzQ-w3-ffH" secondAttribute="leading" constant="20" id="IdA-YS-TMM"/>
@@ -219,6 +221,7 @@
                                                     </constraints>
                                                 </view>
                                             </subviews>
+                                            <color key="backgroundColor" name="MainBackground"/>
                                             <constraints>
                                                 <constraint firstItem="5CC-Io-Cf7" firstAttribute="top" secondItem="N7v-ac-KTz" secondAttribute="top" constant="30" id="TDR-GE-bQA"/>
                                                 <constraint firstItem="5CC-Io-Cf7" firstAttribute="leading" secondItem="N7v-ac-KTz" secondAttribute="leading" constant="20" id="YTZ-iA-UNM"/>
