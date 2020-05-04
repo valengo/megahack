@@ -87,6 +87,7 @@ class TwilioViewController: UIViewController, RoomDelegate, LocalParticipantDele
             localView = VideoView(frame: self.localViewContainer.bounds)
             localView.backgroundColor = .black
             localView.contentMode = .scaleAspectFill
+            localView.shouldMirror = true
 
             localVideoTrack?.addRenderer(localView)
             self.camera = camera
@@ -239,6 +240,6 @@ extension TwilioViewController: UICollectionViewDelegateFlowLayout {
         if (participants > 5) {
             participants = 5
         }
-        return CGSize(width: width/2, height: (height/CGFloat(participants)) * 2)
+        return CGSize(width: width/2, height: height/CGFloat(participants))
     }
 }
