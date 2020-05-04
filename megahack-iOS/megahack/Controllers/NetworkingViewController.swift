@@ -98,17 +98,18 @@ extension NetworkingViewController: UITableViewDelegate {
             let vc = targetStoryboard.instantiateViewController(withIdentifier: "TwilioVideo")
                     
             if let vc = vc as? TwilioViewController {
-                    vc.modalPresentationStyle = .fullScreen
-                    vc.roomName = "MegaHack" //Ver como pegar o nome da sala
-                    present(vc, animated: true, completion: nil)
-                }
+                vc.modalPresentationStyle = .fullScreen
+                vc.roomName = "MegaHack" //Ver como pegar o nome da sala
+                present(vc, animated: true, completion: nil)
+            }
         } else if (!viewModel.isHeader(at: indexPath.row) && !viewModel.isSubheader(at: indexPath.row)) {
             let category = viewModel.getCategory(for: indexPath.row)
             let targetStoryboard =  UIStoryboard(name: "Networking", bundle: nil)
             let vc = targetStoryboard.instantiateViewController(withIdentifier: "SuggestionsViewController")
             if let vc = vc as? SuggestionsViewController {
                 vc.field = category.description
-            present(vc, animated: true, completion: nil)
+                present(vc, animated: true, completion: nil)
+            }
             
         }
     }
