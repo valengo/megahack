@@ -336,7 +336,6 @@
 				647D6747245E869400442029 /* RoomCell.swift */,
 				647D6749245E86DD00442029 /* CategoryCell.swift */,
 				6499A9E3245F26250041DFD6 /* ProfileCell.swift */,
-				6499A9E4245F26250041DFD6 /* ProfileCell.xib */,
 				1FFFFB65245F87C000F1B776 /* RemoteViewCell.swift */,
 			);
 			path = Cells;
@@ -691,7 +690,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = UDGF2JUP82;
 				INFOPLIST_FILE = megahack/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -712,7 +711,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = UDGF2JUP82;
 				INFOPLIST_FILE = megahack/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

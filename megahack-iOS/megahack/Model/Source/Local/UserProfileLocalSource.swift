@@ -18,7 +18,6 @@ class UserProfileLocalSource: LocalSource {
                               url: "whatsapp://send?phone=+14155238886&text=join%20cut-consider"),
                               imageName: "Pina"))
         
-        
         add(item: UserProfile(id: 1, name: "Andressa Valengo", field: "Developer",
                               social: SocialMedia(id: 1, type: .GitHub,
                               url: "https://github.com/valengo"),
@@ -37,7 +36,7 @@ class UserProfileLocalSource: LocalSource {
                               imageName: "Kevin"))
         
         add(item: UserProfile(id: 5, name: "Vinícius Binder", field: "Business",
-                              social: SocialMedia(id: 1, type: .Linkedin, url: "https://www.linkedin.com/in/vin%C3%ADcius-binder-854773189/"),
+                              social: SocialMedia(id: 1, type: .Linkedin, url: "https://www.linkedin.com/in/viniciusbinder"),
                               imageName: "Vini"))
         
     }
